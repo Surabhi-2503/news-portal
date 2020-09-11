@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="corona.css">
+</head>
+<body>
+	      
+  <div class="corohdrnew">
+              <div class="center-section-corona corohdrbtmnew">
+               <div class="clearfix">
+        <a href="/coronavirus-news"><img src="https://english.cdn.zeenews.com/desktop/corona/images/coronanewhdr_new.gif" alt="" class="corohdrimg"></a>
+                <div class="tabcorohdr">
+                  <div class="tabcorona">                   
+                    <button class="tablinks active" onclick="openCity(event, 'Indiacorocase')" id="defaultOpencoro">India</button>
+                    <button class="tablinks" onclick="openCity(event, 'worldcorocase')">World</button>
+                  </div>
+                  <div id="Indiacorocase" class="tabcontent" style="display: block;">                 
+         <ul class="corocase">
+                           <li class="bluecoro"><a href="/coronavirus-news">Confirmed</a><span>13,36,861</span></li>
+                   <li class="greencoro"><a href="/coronavirus-news">Discharged</a><span>8,49,432</span></li>
+                   <li class="redcoro"><a href="/coronavirus-news">Deaths</a><span>31,358</span></li>
+                         </ul>
+                </div><!--end of 1st tab-->
+
+                <div id="worldcorocase" class="tabcontent" style="display: none;"><ul class="corocase">
+                           <li class="bluecoro"><a href="/coronavirus-news">Confirmed</a><span>1,43,35,705</span></li>
+                   <li class="greencoro"><a href="/coronavirus-news">Discharged</a><span>80,71,937</span></li>
+                   <li class="redcoro"><a href="/coronavirus-news">Deaths</a><span>6,03,285</span></li>
+                   
+                         </ul>
+               </div><!--end of 2nf tab-->
+                  <script>
+          function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            if(cityName=='worldcorocase'){
+            document.getElementById("coronasource").innerHTML="Source: JOHNS HOPKINS UNIVERSITY AND MEDICINE";
+            }else{
+            document.getElementById("coronasource").innerHTML="Source: Ministry of Health and Family Welfare, India";
+            }
+            for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+
+          // Get the element with id="defaultOpencoro" and click on it
+          document.getElementById("defaultOpencoro").click();
+          </script>
+                </div> 
+        <p id="coronasource" class="corotxtcopy">Source: Ministry of Health and Family Welfare, India</p>
+               </div>
+        
+               <div class="marqiticrbox">
+                <marquee behavior="scroll" direction="left"
+                onmouseover="this.stop();"
+                onmouseout="this.start();">
+                 <ul>
+         <li><a href="/coronavirus-news/statewise">Andaman and Nicobar Islands</a><span>290</span></li><li><a href="/coronavirus-news/statewise">Andhra Pradesh</a><span>88,671</span></li><li><a href="/coronavirus-news/statewise">Arunachal Pradesh</a><span>1,126</span></li><li><a href="/coronavirus-news/statewise">Assam</a><span>31,086</span></li><li><a href="/coronavirus-news/statewise">Bihar</a><span>36,604</span></li><li><a href="/coronavirus-news/statewise">Chandigarh</a><span>852</span></li><li><a href="/coronavirus-news/statewise">Chhattisgarh</a><span>7,087</span></li><li><a href="/coronavirus-news/statewise">Dadra and Nagar Haveli and Daman and Diu</a><span>860</span></li><li><a href="/coronavirus-news/statewise">Delhi</a><span>129,531</span></li><li><a href="/coronavirus-news/statewise">Goa</a><span>4,686</span></li><li><a href="/coronavirus-news/statewise">Gujarat</a><span>54,626</span></li><li><a href="/coronavirus-news/statewise">Haryana</a><span>30,538</span></li><li><a href="/coronavirus-news/statewise">Himachal Pradesh</a><span>2,049</span></li><li><a href="/coronavirus-news/statewise">Jammu and Kashmir</a><span>17,305</span></li><li><a href="/coronavirus-news/statewise">Jharkhand</a><span>7,836</span></li><li><a href="/coronavirus-news/statewise">Karnataka</a><span>90,942</span></li><li><a href="/coronavirus-news/statewise">Kerala</a><span>18,098</span></li><li><a href="/coronavirus-news/statewise">Ladakh</a><span>1,276</span></li><li><a href="/coronavirus-news/statewise">Madhya Pradesh</a><span>26,926</span></li><li><a href="/coronavirus-news/statewise">Maharashtra</a><span>366,368</span></li><li><a href="/coronavirus-news/statewise">Manipur</a><span>2,176</span></li><li><a href="/coronavirus-news/statewise">Meghalaya</a><span>646</span></li><li><a href="/coronavirus-news/statewise">Mizoram</a><span>361</span></li><li><a href="/coronavirus-news/statewise">Nagaland</a><span>1,289</span></li><li><a href="/coronavirus-news/statewise">Odisha</a><span>24,013</span></li><li><a href="/coronavirus-news/statewise">Puducherry</a><span>2,654</span></li><li><a href="/coronavirus-news/statewise">Punjab</a><span>12,684</span></li><li><a href="/coronavirus-news/statewise">Rajasthan</a><span>35,298</span></li><li><a href="/coronavirus-news/statewise">Sikkim</a><span>499</span></li><li><a href="/coronavirus-news/statewise">Tamil Nadu</a><span>206,737</span></li><li><a href="/coronavirus-news/statewise">Telangana***</a><span>52,466</span></li><li><a href="/coronavirus-news/statewise">Tripura</a><span>3,862</span></li><li><a href="/coronavirus-news/statewise">Uttarakhand</a><span>5,961</span></li><li><a href="/coronavirus-news/statewise">Uttar Pradesh</a><span>63,742</span></li><li><a href="/coronavirus-news/statewise">West Bengal</a><span>56,377</span></li>                  </ul>
+                 </marquee>
+               </div>
+              </div><!--end of conatiner fluid-->
+            </div><!--end of corohdrnew header-->   
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS</title>
+  <link rel="stylesheet" type="text/css" href="business1.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="section">
+      <div class="section1">
+        <img src="newsopedia.png" alt="logo">
+      </div>
+      <div class="section2"><h3><font color="red">N</font>ews<font color="red">O</font>pedia</h3></div>
+      <div class="section3">
+        <ul class="ICON">
+              <li class="ICONL"><a class="ICONA" href="dummy.html"><i class="fa fa-facebook"></i></a></li>
+            <li class="ICONL"><a class="ICONA" href="dummy.html"><i class="fa fa-twitter"></i></a></li>
+            <li class="ICONL"><a class="ICONA" href="dummy.html"><i class="fa fa-rss"></i></a></li>
+            <li class="ICONL"><a class="ICONA" href="dummy.html"><i class="fa fa-linkedin"></i></a></li>
+            <li class="ICONL"><a class="ICONA" href="dummy.html"><i class="fa fa-youtube"></i></a></li>
+            <li class="ICONL"><a class="ICONA" href="dummy.html"><i class="fa fa-instagram"></i></a></li>
+         </ul>
+      </div>
+    </div>
+  </div>
+  <!--SECTION2-->
+  <div class="navbar">
+    <ul class="navbaru">
+      <li class="nav"><a class="nava" href="index.html">HOME</a></li>
+      <li class="nav"><a class="nava" href="dummy.html">WORLD</a></li>
+      <li class="nav"><a class="nava" href="business.html">BUSINESS</a></li>
+      <li class="nav"><a class="nava" href="dummy.html">ENTERTAINMENT</a></li>
+      <li class="nav"><a class="nava" href="dummy.html">CRICKET</a></li>
+      <li class="nav"><a class="nava" href="dummy.html">WEB-SERIES</a></li>
+      <li class="nav"><a class="nava" href="dummy.html">LIFESTYLE</a></li>
+      <li class="abc"><input type="text" placeholder="Search.." name="search">
+                  <button type="submit"><i class="fa fa-search" style="padding:8px;"></i></button></li>
+                  <li class="nav"><a href="virus.html" class="corona">CORONA Virus Updates<font color="blue">>>></font></a></li>
+    </ul>
+  </div>
+  <!--SECTION2 ENDS-->
+  <!--SLIDER-->
+  <div id="slidy-container">
+    <figure id="slidy">
+      <img class="i1" src="slide5.jpg" alt="eyes" >
+      <img class="i1" src="slide1.jpg" alt="lou" >
+      <img  class="i1" src="slide3.jpg" alt="lucie-2" >
+      <img  class="i1" src="slide4.jpg" alt="lucie" >
+    </figure>
+  </div>
+  <!--SLIDER ENDS-->
+<script type="text/javascript" href="business.js">
+    var timeOnSlide = 4,    
+    timeBetweenSlides =2,   
+      animationstring = 'animation',
+      animation = false,
+      keyframeprefix = '',
+      domPrefixes = 'Webkit Moz O Khtml'.split(' '), 
+    // array of possible vendor prefixes
+      pfx  = '',
+      slidy = document.getElementById("slidy"); 
+    if (slidy.style.animationName !== undefined)
+    { 
+      animation = true; 
+    } 
+    if( animation === false ) {
+          for( var i = 0; i < domPrefixes.length; i++ ) 
+          {
+            if( slidy.style[ domPrefixes[i] + 'AnimationName' ] !== undefined ) 
+            {
+              pfx = domPrefixes[ i ];
+              animationstring = pfx + 'Animation';
+              keyframeprefix = '-' + pfx.toLowerCase() + '-';
+              animation = true;
+              break;
+            }
+          }
+
+      }
+      if( animation === false ) {
+        // animate in JavaScript fallback
+      } else {
+        var images = slidy.getElementsByTagName("img"),
+            firstImg = images[0], 
+            imgWrap = firstImg.cloneNode(false);  
+        slidy.appendChild(imgWrap); 
+        var imgCount = images.length, t
+            totalTime = (timeOnSlide + timeBetweenSlides) * (imgCount - 1), 
+            slideRatio = (timeOnSlide / totalTime)*100, 
+            moveRatio = (timeBetweenSlides / totalTime)*100,
+            basePercentage = 100/imgCount, 
+            position = 0,
+            css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML += "#slidy { text-align: left; margin: 0; font-size: 0; position: relative; width: " + (imgCount * 100) + "%;  }\n"; 
+        css.innerHTML += "#slidy img { float: left; width: " + basePercentage + "%; }\n";
+        css.innerHTML += "@"+keyframeprefix+"keyframes slidy {\n"; 
+        for (i=0;i<(imgCount-1); i++) {  
+          position+= slideRatio;
+          css.innerHTML += position+"% { left: -"+(i * 100)+"%; }\n";
+          position += moveRatio; // make the postion for the _next_ slide
+          css.innerHTML += position+"% { left: -"+((i+1) * 100)+"%; }\n";
+      }
+      css.innerHTML += "}\n";
+      css.innerHTML += "#slidy { left: 0%; "+keyframeprefix+"transform: translate3d(0,0,0); "+keyframeprefix+"animation: "+totalTime+"s slidy infinite; }\n"; 
+    document.body.appendChild(css); 
+    }
+</script>
+<!--NEWS SECTION-->
+  <div class="row">
+    <div class="row1">
+      <h3 class="videos">VIDEOS</h3>
+        <div class="grid">
+          <article class="art">
+            <div class="text">
+              <iframe src="https://www.youtube.com/embed/xj-0kMxLhgw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              
+              <h3>Top Business News of Satrday At A Glance | Business Saturday.</h3>
+              <span class="span"><i>time:25Aug,2019 | views:4100</i></span>
+            </div>
+          </article>
+          <article class="art">
+            <div class="text">
+              <iframe src="https://www.youtube.com/embed/cVLr_XjI01U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <h3>Today's Top News Headlines In A Nutshell | India Business Hour.</h3>
+              <span class="span"><i>time:2days ago | views:153</i></span>
+            </div>
+          </article>
+          <article class="art">
+            <div class="text">
+              <iframe  src="https://www.youtube.com/embed/lwWj6f00xkA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <h3>Infosys CEO Salil Parekh Decodes COVID-19 Impact On IT Sector</h3>
+              
+              <span class="span"><i>time:2days ago | views:480</i></span>
+            </div>
+          </article>
+          <article class="art" style="height: 300px;">
+            <div class="text">
+              <iframe  src="https://www.youtube.com/embed/9fYbSCi-raI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <h3>Gravitas: Coronavirus: 1000 companies to move from China to India?</h3>
+              
+              <span class="span"><i>time:28April,2020 | views:651K</i></span>
+            </div>
+          </article>
+          <article class="art" style="height: 300px;">
+            <div class="text">
+              <iframe  src="https://www.youtube.com/embed/liSBkc1j_bI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <h3><a href="https://www.hindustantimes.com/india-news/supply-of-medical-equipment-to-india-reciprocation-of-earlier-help-israel/story-OsLeCTepJ7BFtfP5MCIsRJ.html" target="_blank">Gurugram Administration's Work From Home Advisory For Corporate Firms</a></h3>
+              <span class="span"><i>16K views . Mar 17,2020</i></span>
+            </div>
+          </article>
+          
+        </div>
+      </div>
+    </div>
+    <!--ARTHICE-->
+    <div class="row">
+      <div class="row1">
+        <h3 class="article">ARTICLES</h3>
+        <div class="grid" >
+          <article class="art" style="height: 300px;">
+            <div class="text">
+              <img src="images/business1.jpg" alt="economy"/>
+              
+              <h3><a href="https://www.hindustantimes.com/india-news/news-updates-from-hindustan-times-pm-modi-to-deliver-keynote-addres-at-usibc-summit-on-economic-revival-and-all-the-latest-news/story-I32TnxY2tWIT7GdDKBhpTL.html" target="_target"> PM Modi to deliver keynote address at USIBC Summit on economic revival and all the latest news</a></h3>
+              
+            </div>
+          </article>
+          <article class="art" style="height: 300px;">
+            <div class="text">
+              <img src="images/business2.webp" alt="economy"/>
+              <h3><a href="https://www.hindustantimes.com/india-news/supply-of-medical-equipment-to-india-reciprocation-of-earlier-help-israel/story-OsLeCTepJ7BFtfP5MCIsRJ.html" target="_blank"> Supply of medical equipment to India reciprocation of earlier help: Israel</a></h3>
+              
+            </div>
+          </article>
+          <article class="art" style="height: 300px;">
+            <div class="text">
+              <img src="images/google.webp" alt="economy"/>
+              <h3><a href="https://www.hindustantimes.com/world-news/google-extends-work-from-home-to-2021/story-hthVM5WnSAbhXkZossxM6M.html" target="_blank"> Google extends work from home to 2021</a></h3>
+              
+            </div>
+          </article>
+          <article class="art" style="height: 300px;">
+            <div class="text">
+              <img src="images/kotak.webp" alt="economy"/>
+              <h3><a href="https://www.hindustantimes.com/business-news/kotak-bank-s-q1-profit-drops-9-to-1-244-cr/story-OyspUzZwP31wFgiIGU343K.html" target="_blank"> Kotak bank’s Q1 profit drops 9% to ₹1,244 cr</a></h3>
+            </div>
+          </article>
+          <article class="art" style="height: 300px;">
+            <div class="text">
+              <img src="images/reliance.webp" alt="economy"/>
+              <h3><a href="https://www.hindustantimes.com/business-news/reliance-industries-ltd-may-buy-future-group-s-retail-biz-for-27-000-crore/story-cjP8QWgPm4pJ45sb2AP9xJ.html" target="_blank">Reliance Industries Ltd may buy Future Group’s retail biz for ₹27,000 crore.</a></h3>
+            </div>
+          </article>
+          <article class="art" style="height: 300px;">
+            <div class="text">
+              <img src="images/rural.webp" alt="economy"/>
+              <h3><a href="https://www.hindustantimes.com/business-news/rural-joblessness-rate-up-for-second-straight-week/story-aN3JYej1y42DCKTxPBGW7L.html" target="_blank">Rural joblessness rate up for second straight week</a></h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+<!--NEWS SECTION-->
+<!--pagination-->
+<div class="pagination" style="padding-left:600px;padding-top: 20px;">
+  <a href="dummy.html">&laquo;</a>
+  <a href="business.html">1</a>
+  <a href="business1.html">2</a>
+  <a href="dummy.html">3</a>
+  <a href="dummy.html">4</a>
+  <a href="dummy.html">5</a>
+  <a href="dummy.html">6</a>
+  <a href="dummy.html">&raquo;</a>
+</div>
+<br><br><br>
+<!--pagination ends-->
+<div class="container1">
+    <h3><a href="index.html">© Copyright:NewOpedia.com</a></h3>
+</div>
+</body>
+</html>

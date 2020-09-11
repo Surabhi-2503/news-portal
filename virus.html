@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Newsopedia</title>
+	  <meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	  <meta name="viewport" content="width=device-width ,initial-scale=1">
+	  <link rel="stylesheet" type="text/css" href="virus.css">
+	  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!-- header1 -->
+  <nav class="navbar navbar-expand-sm navbar-dark logos">
+    <a class="navbar-brand" href="#">
+        <img src="newsopedia.png" alt="logo" class="logostyle">
+      </a>
+      <p class="names"><font color="red">N</font>ews<font color="red">O</font>pedia</p>
+    <ul class="navbar navbar-expand-sm settle">
+      <li class="nav-item list-inline-item list-unstyled"><a href="dummy.html" class="fab fa-facebook"></a></li>
+    <li class="nav-item list-inline-item list-unstyled"><a href="dummy.html" class="fab fa-twitter"></a></li>
+    <li class="nav-item list-inline-item list-unstyled" ><a href="dummy.html" class="fa fa-rss"></a></li>
+    <li class="nav-item list-inline-item list-unstyled"><a href="dummy.html" class="fab fa-linkedin"></a></li>
+    <li class="nav-item list-inline-item list-unstyled"><a href="dummy.html" class="fab fa-youtube"></a></li>
+    <li class="nav-item list-inline-item list-unstyled"><a href="dummy.html" class="fab fa-instagram"></a></li>
+  </ul>
+  </nav>
+  <!--header1 ends-->
+  <!-- header2 -->
+  <nav class="navbar navbar-expand bg-danger sticky-top ">
+      <ul class="navbar-nav lists alligns d-flex flex-wrap">
+        <li class="nav-item list-inline">
+            <a class="nav-link" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item list-inline">
+            <a class="nav-link" href="dummy.html">INDIA</a>
+        </li>
+        <li class="nav-item list-inline">
+            <a class="nav-link" href="dummy.html">WORLD</a>
+        </li>
+        <li class="nav-item list-inline">
+            <a class="nav-link" href="business.html">BUSINESS</a>
+        </li>
+        <li class="nav-item list-inline">
+            <a class="nav-link" href="dummy.html">ENTERTAINMENT</a>
+        </li>
+        <li class="nav-item list-inline">
+            <a class="nav-link " href="dummy.html">CRICKET</a>
+        </li>
+        <li class="nav-item list-inline">
+            <a class="nav-link" href="dummy.html">WEB-SERIES</a>
+        </li>
+        <li class="nav-item list-inline">
+            <a class="nav-link" href="dummy.html">LIFESTYLE</a>
+        </li>
+        <li class="nav-item">
+          <form class="form-inline d-flex " action="#">
+            <div class="input-group">
+              <input type="text" class="form-control texts ml-3" placeholder="Search">
+              <div class="input-group-prepend text-center btns"> 
+                <span class="input-group-text fa fa-search bg-dark text-light pr-1.5 btns"></span>
+              </div>
+            </div>
+          </form> 
+        </li>
+      </ul>
+  </nav>
+  <!--header2 ends-->
+  
+  <!--ticker-->
+
+  <div class="container-fluid border border-dark ">
+    <div class="row">
+        <div class="col-md-12 p-0">
+            <div class="d-flex justify-content-start align-items-start breaking-news">
+                <div class="d-flex flex-row flex-grow-1 flex-fill justify-content-center bg-dark py-2 text-white px-1 news">
+                	<span class="d-flex align-items-center ">&nbsp;UPDATES</span>
+                </div>
+                <marquee class="news-scroll mt-2" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"> 
+                		<a href="#">Will protest outside PM Narendra Modi's residence and meet President Kovind if needed,says Rajasthan CM Ashok Gehlot. </a> 
+                		<span class="dot"></span> 
+                		<a href="#">Corona virus cases in India rise to 13,36,861;death toll at 31,358. </a> 
+                		<span class="dot"></span> 
+                		<a href="#">MyGov Corona Helpdeck on Whatsapp<strong> 9013151515</strong>.</a>
+                		<span class="dot"></span> 
+                		<a href="#">PM Modi lauds courage of Indian soldiers on kargil Vijay Diwas,slams Pakisthan </a> 
+                		<span class="dot"></span> 
+                		<a href="#">Mumbai:1,500 patients discharged from railway hospital</a> 
+                </marquee>
+            </div>
+        </div>
+    </div>
+</div>
+<!--ticker ends-->
+<!--banner-->
+<div class="container-fluid w-100 corohdrnew d-grid">
+    <div class="center-section-corona corohdrbtmnew">
+        <div class="clearfix corimg">
+     		<a href="#">
+     			<img src="images/coronanewhdr_new.webp" alt="" class="corohdrimg">
+     		</a>
+            <div class="tabcorohdr">
+                <div class="tabcorona">                   
+                    <button class="tablinks active" onclick="openCity(event, 'Indiacorocase')" id="defaultOpencoro">India</button>
+                    <button class="tablinks" onclick="openCity(event, 'worldcorocase')">World</button>
+                </div>
+                <div id="Indiacorocase" class="tabcontent" style="display: block;">                 
+         			<ul class="corocase">
+                           <li class="bluecoro"><a href="#">Confirmed</a><span>13,36,861</span></li>
+		                   <li class="greencoro"><a href="#">Discharged</a><span>8,49,432</span></li>
+		                   <li class="redcoro"><a href="#">Deaths</a><span>31,358</span></li>
+                    </ul>
+                </div><!--end of 1st tab-->
+
+                <div id="worldcorocase" class="tabcontent" style="display: none;">
+                	<ul class="corocase">
+                        <li class="bluecoro"><a href="#">Confirmed</a><span>1,43,35,705</span></li>
+	                   <li class="greencoro"><a href="#">Discharged</a><span>80,71,937</span></li>
+	                   <li class="redcoro"><a href="#">Deaths</a><span>6,03,285</span></li>
+                   </ul>
+               	</div>
+				<!--javascript-->
+				<script>
+					function openCity(evt, cityName) {
+			            var i, tabcontent, tablinks;
+			            tabcontent = document.getElementsByClassName("tabcontent");
+			            for (i = 0; i < tabcontent.length; i++) {
+           					 tabcontent[i].style.display = "none";
+            			}
+			            tablinks = document.getElementsByClassName("tablinks");
+			            for (i = 0; i < tablinks.length; i++) {
+			            tablinks[i].className = tablinks[i].className.replace(" active", "");
+			            }
+			            document.getElementById(cityName).style.display = "block";
+			            evt.currentTarget.className += " active";
+          			}
+					document.getElementById("defaultOpencoro").click();
+          </script>
+				
+				<!--js end-->
+			</div>
+			
+		</div>
+		 <div class="marqiticrbox">
+            <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+             	<ul>
+         			<li><a href="#">Andaman and Nicobar Islands</a><span>290</span></li>
+         			<li><a href="#">Andhra Pradesh</a><span>88,671</span></li>
+         			<li><a href="#">Arunachal Pradesh</a><span>1,126</span></li>
+         			<li><a href="#">Assam</a><span>31,086</span></li>
+         			<li><a href="#">Bihar</a><span>36,604</span></li>
+         			<li><a href="#">Chandigarh</a><span>852</span></li>
+         			<li><a href="#">Chhattisgarh</a><span>7,087</span></li>
+         			<li><a href="#">Dadra and Nagar Haveli and Daman and Diu</a><span>860</span></li>
+         			<li><a href="#">Delhi</a><span>129,531</span></li>
+         			<li><a href="#">Goa</a><span>4,686</span></li>
+         			<li><a href="#">Gujarat</a><span>54,626</span></li>
+         			<li><a href="#">Haryana</a><span>30,538</span></li>
+         			<li><a href="#">Himachal Pradesh</a><span>2,049</span></li>
+         			<li><a href="#">Jammu and Kashmir</a><span>17,305</span></li>
+         			<li><a href="#">Jharkhand</a><span>7,836</span></li>
+         			<li><a href="#">Karnataka</a><span>90,942</span></li>
+         			<li><a href="#">Kerala</a><span>18,098</span></li>
+         			<li><a href="#">Ladakh</a><span>1,276</span></li>
+         			<li><a href="#">Madhya Pradesh</a><span>26,926</span></li>
+         			<li><a href="#">Maharashtra</a><span>366,368</span></li>
+         			<li><a href="#">Manipur</a><span>2,176</span></li>
+         			<li><a href="#">Meghalaya</a><span>646</span></li>
+         			<li><a href="#">Mizoram</a><span>361</span></li>
+         			<li><a href="#">Nagaland</a><span>1,289</span></li>
+         			<li><a href="#">Odisha</a><span>24,013</span></li>
+         			<li><a href="#">Puducherry</a><span>2,654</span></li>
+         			<li><a href="#">Punjab</a><span>12,684</span></li>
+         			<li><a href="#">Rajasthan</a><span>35,298</span></li>
+         			<li><a href="#">Sikkim</a><span>499</span></li>
+         			<li><a href="#">Tamil Nadu</a><span>206,737</span></li>
+         			<li><a href="#">Telangana***</a><span>52,466</span></li>
+         			<li><a href="#">Tripura</a><span>3,862</span></li>
+         			<li><a href="#">Uttarakhand</a><span>5,961</span></li>
+         			<li><a href="#">Uttar Pradesh</a><span>63,742</span></li>
+         			<li><a href="#">West Bengal</a><span>56,377</span></li>                 
+         		</ul>
+            </marquee>
+        </div>
+	</div>
+</div>
+
+<!--banner ends-->
+
+<!--NEWS-->
+<div class="container-fluid w-100 h-100 mt-1 p-0">
+    <h2 class="text-light text-center font-weight-bolder bg-secondary">LATEST NEWS</h2>
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3">
+		<div class="col mb-4 border border-dark p-0" style="height: 300px; ">
+			<marquee class="news-scroll h-100 p-0" loop="infinite" direction="up" onmouseover="this.stop();" onmouseout="this.start();"> 
+                		<div class="card">
+          					<iframe class="img-fluid card-img-top two" src="https://www.youtube.com/embed/XTG1dIU9FLk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          					<div class="card-body">
+            					<p class="card-text m-0 p-0 text-dark font-weight-bolder">Experts Discuss India's Digital Taxation Policy & Rules On Equilisation Levy | Big Deal</p>
+          					</div>
+        				</div>
+        				<div class="card">
+          					<img class="img-fluid card-img-top two" src="images/modi.webp">
+          					<div class="card-body ">
+            					<a href="https://zeenews.india.com/india/pm-narendra-modi-to-launch-high-throughput-coronavirus-covid-19-testing-facilities-on-july-27-2298428.html" target="_blank" class="card-text m-0 p-0 text-dark font-weight-bolder">Experts PM Narendra Modi to launch high throughput coronavirus COVID-19 testing facilities on July 27</a>
+          					</div>
+        				</div>
+        				<div class="card">
+          					<img class="img-fluid card-img-top two" src="images/p1.jpg">
+          					<div class="card-body ">
+            					<a href="https://www.aljazeera.com/news/2020/07/top-health-agency-urges-schools-reopen-coronavirus-latest-200725000907772.html" target="_blank" class="card-text m-0 p-0 text-dark font-weight-bolder">UK to quarantine travellers from Spain: Coronavirus updates</a>
+          					</div>
+        				</div>
+			</marquee>
+       	</div>
+	     	<div class="col mb-4 border border-dark">
+	      		<h3 class="text-center">COVID-19 NEWS</h3> 
+  					<iframe class="img-fluid w-100" style="height:250px;" src="https://www.youtube.com/embed/q1ZGqQy4U1I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        	</div>
+	     
+	     <div class="col mb-4 border border-dark w-100" style="height: 300px;overflow-y:scroll;">
+	        <div class="container">
+            <h5>INDIA</h5>
+			  <table class="table table-bordered my-2">
+			    <thead class="bg-dark text-light text-center" >
+			      <tr>
+			        <th>STATES</th>
+			        <th>CASES</th>
+			        <th>DEATHS</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			    	<tr>
+				    	<td>Andaman and Nicobar Islands</td>
+	       			 	<td>290</td>
+	          			<td>0 </td>
+	          		</tr>
+                  	<tr>
+			           	<td>Andhra Pradesh</td>
+			           	<td>88,671</td>
+			           	<td>985</td>
+			         </tr>
+                 	<tr>
+            		   	<td>Arunachal Pradesh</td>
+        			    <td>1,126</td>
+			          	<td> 3 </td>
+			        </tr>
+			        <tr>
+          				<td>Assam</td>
+          				<td>31,086</td>
+          				<td>77</td>
+          			</tr>
+                  	<tr>
+            			<td>Bihar</td>
+			          	<td>36,604</td>
+			          	<td>234</td>
+          			</tr>
+                  	<tr>
+				         <td>Chandigarh</td>
+				         <td>852</td>
+				         <td>13</td>
+          </tr>
+                  <tr>
+            <td>
+               Chhattisgarh            </td>
+          <td>
+              7,087             </td>
+          <td>
+              39             </td>
+          </tr>
+                  <tr>
+            <td>
+               Dadra and Nagar Haveli and Daman and Diu            </td>
+          <td>
+              860             </td>
+          <td>
+              2             </td>
+          </tr>
+                  <tr>
+            <td>
+               Delhi            </td>
+          <td>
+              129,531             </td>
+          <td>
+              3,806             </td>
+          </tr>
+                  <tr>
+            <td>
+               Goa            </td>
+          <td>
+              4,686             </td>
+          <td>
+              33             </td>
+          </tr>
+                  <tr>
+            <td>
+               Gujarat            </td>
+          <td>
+              54,626             </td>
+          <td>
+              2,300             </td>
+          </tr>
+                  <tr>
+            <td>
+               Haryana            </td>
+          <td>
+              30,538             </td>
+          <td>
+              389             </td>
+          </tr>
+                  <tr>
+            <td>
+               Himachal Pradesh            </td>
+          <td>
+              2,049             </td>
+          <td>
+              11             </td>
+          </tr>
+                  <tr>
+            <td>
+               Jammu and Kashmir            </td>
+          <td>
+              17,305             </td>
+          <td>
+              305             </td>
+          </tr>
+                  <tr>
+            <td>
+               Jharkhand            </td>
+          <td>
+              7,836             </td>
+          <td>
+              82             </td>
+          </tr>
+                  <tr>
+            <td>
+               Karnataka            </td>
+          <td>
+              90,942             </td>
+          <td>
+              1,796             </td>
+          </tr>
+                  <tr>
+            <td>
+               Kerala            </td>
+          <td>
+              18,098             </td>
+          <td>
+              59             </td>
+          </tr>
+                  <tr>
+            <td>
+               Ladakh            </td>
+          <td>
+              1,276             </td>
+          <td>
+              3             </td>
+          </tr>
+                  <tr>
+            <td>
+               Madhya Pradesh            </td>
+          <td>
+              26,926             </td>
+          <td>
+              799             </td>
+          </tr>
+                  <tr>
+            <td>
+               Maharashtra            </td>
+          <td>
+              366,368             </td>
+          <td>
+              13,389             </td>
+          </tr>
+                  <tr>
+            <td>
+               Manipur            </td>
+          <td>
+              2,176             </td>
+          <td>
+              0             </td>
+          </tr>
+                  <tr>
+            <td>
+               Meghalaya            </td>
+          <td>
+              646             </td>
+          <td>
+              5             </td>
+          </tr>
+                  <tr>
+            <td>
+               Mizoram            </td>
+          <td>
+              361             </td>
+          <td>
+              0             </td>
+          </tr>
+                  <tr>
+            <td>
+               Nagaland            </td>
+          <td>
+              1,289             </td>
+          <td>
+              4             </td>
+          </tr>
+                  <tr>
+            <td>
+               Odisha            </td>
+          <td>
+              24,013             </td>
+          <td>
+              130             </td>
+          </tr>
+                  <tr>
+            <td>
+               Puducherry            </td>
+          <td>
+              2,654             </td>
+          <td>
+              38             </td>
+          </tr>
+                  <tr>
+            <td>
+               Punjab            </td>
+          <td>
+              12,684             </td>
+          <td>
+              291             </td>
+          </tr>
+                  <tr>
+            <td>
+               Rajasthan            </td>
+          <td>
+              35,298             </td>
+          <td>
+              613             </td>
+          </tr>
+                  <tr>
+            <td>
+               Sikkim            </td>
+          <td>
+              499             </td>
+          <td>
+              0             </td>
+          </tr>
+                  <tr>
+            <td>
+               Tamil Nadu            </td>
+          <td>
+              206,737             </td>
+          <td>
+              3,409             </td>
+          </tr>
+                  <tr>
+            <td>
+               Telangana***            </td>
+          <td>
+              52,466             </td>
+          <td>
+              455             </td>
+          </tr>
+                  <tr>
+            <td>
+               Tripura            </td>
+          <td>
+              3,862             </td>
+          <td>
+              11             </td>
+          </tr>
+                  <tr>
+            <td>
+               Uttarakhand            </td>
+          <td>
+              5,961             </td>
+          <td>
+              63             </td>
+          </tr>
+                  <tr>
+            <td>
+               Uttar Pradesh            </td>
+          <td>
+              63,742             </td>
+          <td>
+              1,387             </td>
+          </tr>
+                  <tr>
+            <td>
+               West Bengal            </td>
+          <td>
+              56,377             </td>
+          <td>
+              1,332             </td>
+          </tr>
+			    </tbody>
+			  </table>
+			</div>
+	     </div>
+	    </div>
+	</div>
+
+<!--news ends-->
+<!--news stories1-->
+<div class="container-fluid w-100 h-100 mt-1 p-0">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3">
+  		<div class="col mb-4 border  border-dark p-0 ">
+  			<img class="img-fluid card-img-top two" src="images/covid1.webp" style="height:300px;">
+      </div>
+	    <div class="col mb-4 border border-dark">
+	    	<h4>India coronavirus COVID-19 update June 12: Delhi records highest single-day spike of 2,137 COVID-19 cases</h4>
+	      		<a href="https://zeenews.india.com/india/live-updates/india-coronavirus-covid-19-update-june-12-live-uttarakhand-reports-37-new-covid-19-positive-cases-today-2289421" target="_blank" class="card-text m-0 p-0 text-info font-weight-bolder">The nationwide COVID-19 tally crossed 2.9 lakh on Friday with a record single-day increase of more than 10,000 cases taking the count of infections detected this month to almost one lakh.</a>
+	      		<br><br><br><h6>Jul 26,2020 12:00PM IST</h6>
+        </div>
+        <div class="col mb-4 border border-dark w-100" style="height: 300px;overflow-y:scroll;">
+          <div class="container">
+            <h5 class="text-center">WORLD</h5>
+        <table class="table table-bordered my-0 ">
+          <thead class="bg-dark text-light text-center " >
+            <tr><th>COUNTRY</th><th>Number of cases</th></tr></thead><tbody class="world"><tr><td>World</td><td>16,424,021</td></tr><tr><td>USA</td><td>4,371,839</td></tr><tr><td>Brazil</td><td>2,419,901</td></tr><tr><td>India</td><td>1,437,976</td></tr><tr><td>Russia</td><td>812,485</td></tr><tr><td>South Africa</td><td>445,433</td></tr><tr><td>Mexico</td><td>390,516</td></tr><tr><td>Peru</td><td>384,797</td></tr><tr><td>Chile</td><td>345,790</td></tr><tr><td>Spain</td><td>319,501</td></tr><tr><td>UK</td><td>299,426</td></tr><tr><td>Iran</td><td>291,172</td></tr><tr><td>Pakistan</td><td>274,289</td></tr><tr><td>Saudi Arabia</td><td>266,941</td></tr><tr><td>Colombia</td><td>248,976</td></tr><tr><td>Italy</td><td>246,118</td></tr><tr><td>Turkey</td><td>226,100</td></tr><tr><td>Bangladesh</td><td>223,453</td></tr><tr><td>Germany</td><td>206,741</td></tr><tr><td>France</td><td>180,528</td></tr><tr><td>Argentina</td><td>162,526</td></tr><tr><td>Canada</td><td>113,911</td></tr><tr><td>Iraq</td><td>110,032</td></tr><tr><td>Qatar</td><td>109,305</td></tr><tr><td>Indonesia</td><td>98,778</td></tr><tr><td>Egypt</td><td>92,062</td></tr><tr><td>China</td><td>83,891</td></tr><tr><td>Kazakhstan</td><td>83,122</td></tr><tr><td>Ecuador</td><td>80,694</td></tr><tr><td>Philippines</td><td>80,448</td></tr><tr><td>Sweden</td><td>78,997</td></tr><tr><td>Oman</td><td>76,005</td></tr><tr><td>Bolivia</td><td>69,429</td></tr><tr><td>Belarus</td><td>67,132</td></tr><tr><td>Belgium</td><td>66,026</td></tr><tr><td>Ukraine</td><td>64,849</td></tr><tr><td>Kuwait</td><td>63,773</td></tr><tr><td>Dominican Republic</td><td>62,908</td></tr><tr><td>Israel</td><td>61,956</td></tr><tr><td>Panama</td><td>60,296</td></tr><tr><td>UAE</td><td>58,913</td></tr><tr><td>Netherlands</td><td>52,946</td></tr><tr><td>Singapore</td><td>50,369</td></tr><tr><td>Portugal</td><td>50,164</td></tr><tr><td>Guatemala</td><td>45,053</td></tr><tr><td>Romania</td><td>44,798</td></tr><tr><td>Poland</td><td>43,065</td></tr><tr><td>Nigeria</td><td>40,532</td></tr><tr><td>Honduras</td><td>39,276</td></tr><tr><td>Bahrain</td><td>39,131</td></tr><tr><td>Armenia</td><td>37,317</td></tr><tr><td>Afghanistan</td><td>36,263</td></tr><tr><td>Switzerland</td><td>34,412</td></tr><tr><td>Kyrgyzstan</td><td>33,296</td></tr><tr><td>Ghana</td><td>32,969</td></tr><tr><td>Azerbaijan</td><td>30,050</td></tr><tr><td>Japan</td><td>29,382</td></tr><tr><td>Algeria</td><td>27,357</td></tr><tr><td>Ireland</td><td>25,881</td></tr><tr><td>Serbia</td><td>23,730</td></tr><tr><td>Moldova</td><td>23,034</td></tr><tr><td>Uzbekistan</td><td>20,531</td></tr><tr><td>Austria</td><td>20,472</td></tr><tr><td>Morocco</td><td>20,278</td></tr><tr><td>Nepal</td><td>18,613</td></tr><tr><td>Kenya</td><td>17,603</td></tr><tr><td>Cameroon</td><td>16,708</td></tr><tr><td>Ivory Coast</td><td>15,596</td></tr><tr><td>Venezuela</td><td>15,463</td></tr><tr><td>Czechia</td><td>15,324</td></tr><tr><td>Costa Rica</td><td>15,229</td></tr><tr><td>Australia</td><td>14,935</td></tr><tr><td>El Salvador</td><td>14,630</td></tr><tr><td>S. Korea</td><td>14,175</td></tr><tr><td>Ethiopia</td><td>13,968</td></tr><tr><td>Denmark</td><td>13,438</td></tr><tr><td>Sudan</td><td>11,385</td></tr><tr><td>Palestine</td><td>10,469</td></tr><tr><td>Bulgaria</td><td>10,427</td></tr><tr><td>North Macedonia</td><td>10,086</td></tr><tr><td>Bosnia and Herzegovina</td><td>9,767</td></tr><tr><td>Senegal</td><td>9,681</td></tr><tr><td>Madagascar</td><td>9,295</td></tr><tr><td>Norway</td><td>9,117</td></tr><tr><td>Malaysia</td><td>8,897</td></tr><tr><td>DRC</td><td>8,831</td></tr><tr><td>Finland</td><td>7,393</td></tr><tr><td>French Guiana</td><td>7,332</td></tr><tr><td>Haiti</td><td>7,315</td></tr><tr><td>Tajikistan</td><td>7,192</td></tr><tr><td>Guinea</td><td>7,008</td></tr><tr><td>Gabon</td><td>6,984</td></tr><tr><td>Luxembourg</td><td>6,272</td></tr><tr><td>Mauritania</td><td>6,171</td></tr><tr><td>Djibouti</td><td>5,050</td></tr><tr><td>Croatia</td><td>4,857</td></tr><tr><td>Albania</td><td>4,763</td></tr><tr><td>CAR</td><td>4,599</td></tr><tr><td>Zambia</td><td>4,481</td></tr><tr><td>Paraguay</td><td>4,444</td></tr><tr><td>Hungary</td><td>4,435</td></tr><tr><td>Greece</td><td>4,193</td></tr><tr><td>Lebanon</td><td>3,750</td></tr><tr><td>Malawi</td><td>3,640</td></tr><tr><td>Nicaragua</td><td>3,439</td></tr><tr><td>Maldives</td><td>3,302</td></tr><tr><td>Thailand</td><td>3,295</td></tr><tr><td>Somalia</td><td>3,178</td></tr><tr><td>Equatorial Guinea</td><td>3,071</td></tr><tr><td>Congo</td><td>3,038</td></tr><tr><td>Mayotte</td><td>2,862</td></tr><tr><td>Montenegro</td><td>2,799</td></tr><tr><td>Sri Lanka</td><td>2,782</td></tr><tr><td>Libya</td><td>2,669</td></tr><tr><td>Hong Kong</td><td>2,634</td></tr><tr><td>Zimbabwe</td><td>2,512</td></tr><tr><td>Mali</td><td>2,510</td></tr><tr><td>Cuba</td><td>2,495</td></tr><tr><td>Cabo Verde</td><td>2,307</td></tr><tr><td>South Sudan</td><td>2,262</td></tr><tr><td>Eswatini</td><td>2,207</td></tr><tr><td>Slovakia</td><td>2,179</td></tr><tr><td>Slovenia</td><td>2,082</td></tr><tr><td>Estonia</td><td>2,034</td></tr><tr><td>Lithuania</td><td>2,008</td></tr><tr><td>Guinea-Bissau</td><td>1,954</td></tr><tr><td>Iceland</td><td>1,847</td></tr><tr><td>Rwanda</td><td>1,821</td></tr><tr><td>Sierra Leone</td><td>1,783</td></tr><tr><td>Namibia</td><td>1,775</td></tr><tr><td>Benin</td><td>1,770</td></tr><tr><td>Yemen</td><td>1,681</td></tr><tr><td>Mozambique</td><td>1,669</td></tr><tr><td>New Zealand</td><td>1,556</td></tr><tr><td>Tunisia</td><td>1,452</td></tr><tr><td>Suriname</td><td>1,439</td></tr><tr><td>Latvia</td><td>1,219</td></tr><tr><td>Uruguay</td><td>1,192</td></tr><tr><td>Jordan</td><td>1,168</td></tr><tr><td>Liberia</td><td>1,162</td></tr><tr><td>Georgia</td><td>1,137</td></tr><tr><td>Niger</td><td>1,136</td></tr><tr><td>Uganda</td><td>1,115</td></tr><tr><td>Burkina Faso</td><td>1,086</td></tr><tr><td>Cyprus</td><td>1,057</td></tr><tr><td>Angola</td><td>932</td></tr><tr><td>Chad</td><td>915</td></tr><tr><td>Andorra</td><td>897</td></tr><tr><td>Togo</td><td>868</td></tr><tr><td>Sao Tome and Principe</td><td>863</td></tr><tr><td>Jamaica</td><td>842</td></tr><tr><td>Diamond Princess</td><td>712</td></tr><tr><td>Malta</td><td>700</td></tr><tr><td>San Marino</td><td>699</td></tr><tr><td>Botswana</td><td>686</td></tr><tr><td>Réunion</td><td>657</td></tr><tr><td>Syria</td><td>650</td></tr><tr><td>Channel Islands</td><td>584</td></tr><tr><td>Tanzania</td><td>509</td></tr><tr><td>Lesotho</td><td>505</td></tr><tr><td>Taiwan</td><td>458</td></tr><tr><td>Vietnam</td><td>420</td></tr><tr><td>Guyana</td><td>370</td></tr><tr><td>Burundi</td><td>361</td></tr><tr><td>Comoros</td><td>354</td></tr><tr><td>Myanmar</td><td>350</td></tr><tr><td>Mauritius</td><td>344</td></tr><tr><td>Bahamas</td><td>342</td></tr><tr><td>Isle of Man</td><td>336</td></tr><tr><td>Mongolia</td><td>288</td></tr><tr><td>Gambia</td><td>277</td></tr><tr><td>Martinique</td><td>269</td></tr><tr><td>Eritrea</td><td>263</td></tr><tr><td>Cambodia</td><td>225</td></tr><tr><td>Faeroe Islands</td><td>214</td></tr><tr><td>Guadeloupe</td><td>203</td></tr><tr><td>Cayman Islands</td><td>203</td></tr><tr><td>Gibraltar</td><td>185</td></tr><tr><td>Bermuda</td><td>153</td></tr><tr><td>Trinidad and Tobago</td><td>147</td></tr><tr><td>Brunei</td><td>141</td></tr><tr><td>Aruba</td><td>119</td></tr><tr><td>Monaco</td><td>116</td></tr><tr><td>Sint Maarten</td><td>114</td></tr><tr><td>Seychelles</td><td>114</td></tr><tr><td>Barbados</td><td>110</td></tr><tr><td>Turks and Caicos</td><td>97</td></tr><tr><td>Bhutan</td><td>95</td></tr><tr><td>Liechtenstein</td><td>86</td></tr><tr><td>Antigua and Barbuda</td><td>82</td></tr><tr><td>Papua New Guinea</td><td>62</td></tr><tr><td>French Polynesia</td><td>62</td></tr><tr><td>St. Vincent Grenadines</td><td>52</td></tr><tr><td>Saint Martin</td><td>49</td></tr><tr><td>Belize</td><td>48</td></tr><tr><td>Macao</td><td>46</td></tr><tr><td>Curaçao</td><td>29</td></tr><tr><td>Fiji</td><td>27</td></tr><tr><td>Saint Lucia</td><td>24</td></tr><tr><td>Timor-Leste</td><td>24</td></tr><tr><td>Grenada</td><td>23</td></tr><tr><td>New Caledonia</td><td>22</td></tr><tr><td>Laos</td><td>20</td></tr><tr><td>Dominica</td><td>18</td></tr><tr><td>Saint Kitts and Nevis</td><td>17</td></tr><tr><td>Falkland Islands</td><td>13</td></tr><tr><td>Greenland</td><td>13</td></tr><tr><td>Montserrat</td><td>12</td></tr><tr><td>Vatican City</td><td>12</td></tr><tr><td>Caribbean Netherlands</td><td>11</td></tr><tr><td>Western Sahara</td><td>10</td></tr><tr><td>MS Zaandam</td><td>9</td></tr><tr><td>British Virgin Islands</td><td>8</td></tr><tr><td>St. Barth</td><td>7</td></tr><tr><td>Saint Pierre Miquelon</td><td>4</td></tr><tr><td>Anguilla</td><td>3</td></tr></tbody></table>
+      </div>
+       </div>
+    </div>
+</div>
+<div class="container-fluid w-100 mt-1 p-0">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3">
+  		<div class="col mb-4  w-100  p-0 ">
+  			<img class="img-fluid card-img-top two" src="images/covid2.webp" style="height:300px;">
+      </div>
+	    <div class="col mb-4  ">
+	    	  <h4>India's first covid vaccine Covaxin update: 'Encouraging' results seen in trials</h4>
+	      		<a href="https://www.livemint.com/science/health/india-s-first-covid-vaccine-covaxin-update-encouraging-trial-results-so-far-11595735209134.html" target="_blank" class="card-text m-0 p-0 text-info font-weight-bolder">The results from the first part of phase-1 trial of Covaxin, India's first indigenous covid vaccine candidate, are "encouraging", said principal investigator of the vaccine trial team at PGI Rohtak..</a>
+	      		<br><br><h6>Jul 25,2020 14:00PM IST</h6>
+      </div>
+      <div class="col mb-4  w-100">
+        <div class="container">
+          <div class="bingwidget" data-type="covid19" data-market="en-us" data-language="en-us"></div>
+            <script src="//www.bing.com/widget/bootstrap.answer.js" async=""></script>
+          </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
+<!-- https://repl.it/join/phhxdozq-surabhiphaneesh -->

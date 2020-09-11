@@ -1,0 +1,166 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+
+body
+{
+	margin:0;
+	width: 100%;
+}
+.container
+{
+	width:100%;
+	dislay:flex;
+	color:white;
+}
+.section
+{
+	background-color:black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:flex-start;
+}
+.section1 img
+{
+	padding-top:23px;
+	width:300px;
+  	padding-left:20px;
+  	transition: width 2s linear;
+}
+.section1 img:hover
+{
+  width:301px;
+  transform:scale(1.2);
+}
+.section2 h3
+{
+	display: inline;
+	padding-left:260px;
+	font-family: cursive;
+  	font-weight: 800;
+  	font-size:50px;
+}
+.section3 
+{
+   padding-left:170px;
+}
+.section3 .ICON .ICONL
+{
+	display:inline;
+	text-decoration: none;
+}
+.ICONL .ICONA
+{
+	display: inline;
+	line-height:50px;
+}
+
+.fa{
+
+	  padding:15px;
+	  font-size:18px;
+	  width:25px;
+	  text-decoration: none;
+	  border-radius:50%;
+	  text-align: center;
+	}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-rss{
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.navbar
+{
+	
+	background: #bb2124;
+}
+.navbar .navbaru
+{
+	margin:0;
+	padding:15px;
+}
+.nav,.abc
+{
+	display: inline;
+	
+}
+.navbaru .nava
+{
+   padding:10px;
+   text-decoration: none;
+  color:white;
+  font-weight: bold;
+  font-size:1rem;
+  border-right:.5px solid black;
+}
+ .abc input[type=text]{
+  font-size: 17px;
+  border: none;
+  padding: 5.5px;
+}
+
+.abc button {
+  padding:0px;
+  font-size: 17px;
+  border: none;
+
+  background:black;
+  color:white;
+  cursor: pointer;
+  margin: 0;
+}
+
+.abc button:hover {
+  background: #ccc;
+}
+.corona
+{
+  padding-left:150px;
+  line-height:25px;
+  font-size:1rem;
+  font-weight: bold;
+  font-family: cursive;
+  color:white;
+  animation:anim 2s infinite;
+}
+@keyframes anim{
+  0%{transform:scale(0.7);}
+  25%{transform:scale(0.8);color:blue;}
+  50%{transform:scale(0.9);color:black;}
+  75%{transform:scale(1.0);color:white;}
+  100%{transform:scale(1.1);color:blue;}
+}
+#slidy-container { 
+  width: 100%;height:250px; overflow: hidden; margin: 0 auto;
+}
+#slidy img
+{
+	height:250px;
+}

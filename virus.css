@@ -1,0 +1,916 @@
+body{
+  margin:0;
+  padding: 0;
+  width:100%;
+  overflow-x: hidden;
+}
+
+.logostyle
+{
+  width:300px;
+  margin-left:20px;
+  transition: width 2s linear;
+}
+.logostyle:hover
+{
+  width:301px;
+  transform:scale(1.2);
+  }
+.logos,footer
+{
+  background: black;
+  color:white;
+  
+}
+.names 
+{
+  margin-left:260px;
+  font-family: cursive;
+  font-weight: 800;
+  font-size:50px;
+}
+.settle
+{
+  float: right;
+  margin-left:150px;
+}
+.fa{
+  padding:18px;
+  font-size:40px;
+  width: 50px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+.fab{
+  padding:10px;
+  font-size: 30px;
+  width: 50px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+.fab:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-rss{
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.lists .nav-link
+{
+  color:white;
+  font-weight: bold;
+  font-size:1rem;
+  border-right:.5px solid black;
+}
+.lists .nav-link:hover
+{
+  background:white;
+  color:black;
+  opacity: 0.5;
+}
+
+.cbv
+{
+  height:150px;
+}
+.cbi
+{
+  height:120px;
+}
+.ci
+{
+  height: 200px;
+}
+
+.page-item .page-link:hover
+{
+  background: blue;
+  color:white;
+}
+iframe:hover,.ci:hover
+{
+  transform: scale(1.3);
+}
+
+@keyframes anim{
+  0%{transform:scale(0.7);}
+  25%{transform:scale(0.8);color:blue;}
+  50%{transform:scale(0.9);color:black;}
+  75%{transform:scale(1.0);color:white;}
+  100%{transform:scale(1.1);color:blue;}
+}
+.container-fluid .ab
+{
+  height:300px;
+}
+.table tr:nth-child(even){background-color:#ffcccc;}
+.world tr:nth-child(even){background-color:skyblue;}
+.world tr:nth-child(odd){background-color:white;}
+
+
+.news {
+    width: 160px;
+}
+
+.news-scroll a {
+    text-decoration: none;
+}
+
+.dot {
+    height: 6px;
+    width: 6px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 2px !important;
+    background-color: rgb(207, 23, 23);
+    border-radius: 50%;
+    display: inline-block
+}
+/*banner*/
+.tabcontent
+{
+    display: none;  
+    padding: 0px 0 6px 0px;  
+    border-top: none; 
+}
+.tabcorohdr
+{
+    width: calc(100% - 490px); 
+    float: left;
+}
+.corohdrimg
+{
+    float: left;
+}
+
+.tabcorona 
+{
+    overflow: hidden; 
+    font-family: 'roboto';
+    margin-left: 5px;
+}
+.tabcorona button 
+{
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding:0px 25px 2px 25px;
+    font-size: 17px;
+    color:#fff;
+    text-transform: uppercase; 
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: #413F52; 
+    margin-right: 5px;}
+.tabcorona button.active {background-color: #DD0202;} 
+.corohdrnew
+{
+    background:#02001a;
+    font-family: 'roboto'; 
+    color: #fff;
+}
+.corohdrbtmnew
+{
+    background:url(images/coronanewhdrbttm.jpg) no-repeat bottom right;
+}
+.corocase
+{
+    display: flex;
+    padding:0 0 0 15px;
+}
+.corocase li
+{
+    flex:1; 
+    list-style-type: none;
+    font-size: 20px; 
+    text-transform: uppercase; 
+    border:1px solid #140f55;
+    margin: 5px; 
+    border-radius: 8px; 
+    text-align: center; 
+    letter-spacing: 1px;
+    padding-top: 10px;
+}
+.corocase li span
+{
+    display:block; 
+    font-weight: bold;
+    font-size: 50px; 
+    letter-spacing: 0; 
+    line-height: 70px;   
+    margin-bottom: 10px;
+}
+.corocase li a:hover
+{
+  text-decoration: none;
+}
+.corocase li a
+{
+  color:#fff; 
+}
+.bluecoro span
+{
+  color:#3291f3;
+  text-shadow:1px 1px 1px  white,
+            1px 1.2px  white;
+}
+.greencoro span
+{
+  color:#069b0d;
+  text-shadow:1px 1px 1px  white,
+            1px 1.2px  white;
+}
+.redcoro span
+{
+  color:#dd0202;
+  text-shadow:1px 1px 1px  white,
+            1px 1.2px  white;
+} 
+.bluecoro span:hover,.greencoro span:hover,.redcoro span:hover
+{
+    transform: scale(1.4);
+}
+.marqiticrbox
+{
+    border:1px solid #140f55; 
+    margin:5px 0 10px 0; 
+    border-radius: 8px;
+    padding:0; 
+    width: 80%;
+}
+.marqiticrbox ul
+{ 
+    margin:5px 0 0px 0; 
+    padding:5px 0; 
+    height: 40px;
+}
+.marqiticrbox li
+{
+    list-style-type: none; 
+    display:inline-block; 
+    font-size: 18px; 
+    padding: 0 25px; 
+    border-right:1px solid #140f55
+}
+.marqiticrbox li span
+{
+    color:red;
+    font-weight: bold; 
+    display:inline-block;
+     padding-left: 15px;
+}
+.marqiticrbox li a
+{
+  color:#fff;
+}
+
+@media(min-width: 320px) and (max-width: 374px)
+{
+  body
+  {
+    margin: 0;
+    width:100%;
+    overflow-x: hidden;
+  }
+  .logostyle
+  {
+    width:200px;
+    margin:0;
+    
+  }
+  .names 
+  {
+    margin:auto;
+    font-size:40px;
+    text-align: center;
+  }
+
+ .navbar .fa,.navbar .fab
+  {
+    padding:7px;
+    font-size:20px;
+    width:30px;
+    margin: 0;
+  }
+  i 
+  {
+    padding:0;
+    margin: 0;
+    font-size:20px;
+  }
+  i .fab .fa-android
+  {
+    padding:0;
+    margin-left: 0;
+  }
+ 
+  .settle
+  {
+  float: left;
+  margin:0px;
+  }
+  .lists .nav-item .nav-link
+  {
+    border:none;
+    line-height:7px;
+    font-weight: 400;
+    font-size:12px;
+    margin:0px;
+    padding:5px;
+  }
+  .nav-link:hover
+  {
+    transform: scale(1.3);
+  }
+
+  
+  form
+  {
+    margin-top:5px;
+    font-size:12px;
+  }
+  form .texts
+  {
+    height:30px;
+    width:150px;
+  }
+  form .btns
+  {
+    width:50px;
+    height:30px;
+  }
+  .card-body
+  {
+    padding:1px;
+  }
+/*banner*/
+.corimg img
+{
+  width: 100%;
+}
+.tabcorohdr
+{
+    width:100%; 
+    float:none;
+}
+.corohdrimg
+{
+    float:none;
+}
+
+.tabcorona 
+{
+   display:block;
+    margin:0;
+}
+.tabcorona button 
+{
+  padding:0px 20px 2px 20px;
+    font-size: 14px;
+}
+.corocase
+{
+    display:grid;
+    padding:0 0 0 10px;
+}
+.corocase li
+{
+    font-size: 15px; 
+    margin:1px; 
+    letter-spacing:0;
+    padding-top:2px;
+}
+.corocase li span
+{
+    font-size:35px; 
+    line-height:20px;   
+}
+
+}
+@media(min-width: 375px) and (max-width: 425px)
+{
+   body
+  {
+    margin: 0;
+    width:100%;
+    overflow-x: hidden;
+  }
+  .logostyle
+  {
+    width:200px;
+    margin:0;
+    
+  }
+  .names 
+  {
+    margin:auto;
+    font-size:40px;
+    text-align: center;
+
+  }
+
+ .navbar .fa,.navbar .fab
+  {
+    padding:7px;
+    font-size:20px;
+    width:30px;
+    margin: 0;
+  }
+  i 
+  {
+    padding:0;
+    margin: 0;
+    font-size:20px;
+  }
+  i .fab .fa-android
+  {
+    padding:0;
+    margin-left: 0;
+  }
+ 
+  .settle
+  {
+  float: left;
+  margin:0px;
+  }
+  .lists .nav-item .nav-link
+  {
+    border:none;
+    line-height:7px;
+    font-weight: 400;
+    font-size:12px;
+    margin:0px;
+    padding:5px;
+  }
+  .nav-link:hover
+  {
+    transform: scale(1.3);
+  }
+
+ 
+  form
+  {
+    margin-top:5px;
+    font-size:12px;
+  }
+  form .texts
+  {
+    height:30px;
+    width:150px;
+  }
+  form .btns
+  {
+    width:50px;
+    height:30px;
+  }
+  .corimg img
+{
+  width: 100%;
+}
+.tabcorohdr
+{
+    width:100%; 
+    float:none;
+}
+.corohdrimg
+{
+    float:none;
+}
+
+.tabcorona 
+{
+   display:block;
+    margin:0;
+}
+.tabcorona button 
+{
+  padding:0px 20px 2px 20px;
+    font-size: 14px;
+}
+.corocase
+{
+    display:grid;
+    padding:0 0 0 10px;
+}
+.corocase li
+{
+    font-size: 15px; 
+    margin:1px; 
+    letter-spacing:0;
+    padding-top:2px;
+}
+.corocase li span
+{
+    font-size:35px; 
+    line-height:20px;   
+}
+}
+
+@media(min-width:426px) and (max-width: 767px)
+{
+   body
+  {
+    margin:0;
+    width:100%;
+    overflow-x: hidden;
+  }
+  .logostyle
+  {
+    width:210px;
+    margin:0;
+    
+  }
+  .names 
+  {
+    margin:auto;
+    font-size:40px;
+    text-align: center;
+  }
+
+ .navbar .fa,.navbar .fab
+  {
+    padding:7px;
+    font-size:20px;
+    width:30px;
+    margin: 0;
+  }
+  i 
+  {
+    padding:0;
+    margin: 0;
+    font-size:20px;
+  }
+  i .fab .fa-android
+  {
+    padding:0;
+    margin-left: 0;
+  }
+ 
+  .settle
+  {
+  float: left;
+  margin:0px;
+  }
+  .lists .nav-item .nav-link
+  {
+    
+    line-height:11px;
+    font-weight: 400;
+    font-size:20px;
+    margin:auto;
+    padding:5px;
+  }
+  .nav-link:hover
+  {
+    transform: scale(1.3);
+  }
+
+  
+  form
+  {
+    margin-top:5px;
+    font-size:12px;
+  }
+  form .texts
+  {
+    height:30px;
+    width:150px;
+  }
+  form .btns
+  {
+    width:50px;
+    height:30px;
+  }
+  .corimg img
+{
+  width: 100%;
+}
+.tabcorohdr
+{
+    width:100%; 
+    float:none;
+}
+.corohdrimg
+{
+    float:none;
+}
+
+.tabcorona 
+{
+   display:block;
+    margin:auto;
+}
+.tabcorona button 
+{
+  padding:0px 20px 2px 20px;
+    font-size: 14px;
+
+}
+.corocase
+{
+    display:flex;
+    margin-top:12px;
+    padding:0 0 0 10px;
+}
+.corocase li
+{
+    font-size: 14px; 
+    margin:0; 
+    letter-spacing:0;
+    padding-top:2px;
+}
+.corocase li span
+{
+    font-size:30px; 
+    line-height:20px;   
+}
+}
+
+@media(min-width:768px) and (max-width:1023px)
+{
+  body
+  {
+    margin: 0;
+    width:100%;
+    overflow-x: hidden;
+  }
+  .logostyle
+  {
+    width:200px;
+    margin:0;
+    
+  }
+  .names 
+  {
+    margin:auto;
+    font-size:40px;
+    text-align: center;
+  }
+
+ .navbar .fa,.navbar .fab
+  {
+    padding:7px;
+    font-size:20px;
+    width:30px;
+    margin: 0;
+  }
+  i 
+  {
+    padding:0;
+    margin: 0;
+    font-size:20px;
+  }
+  i .fab .fa-android
+  {
+    padding:0;
+    margin-left: 0;
+  }
+ 
+  .settle
+  {
+  float: left;
+  margin:0px;
+  }
+  .lists .nav-item .nav-link
+  {
+    border:none;
+    line-height:7px;
+    font-weight: 400;
+    font-size:16px;
+    margin:0px;
+    padding:5px;
+  }
+  .nav-link:hover
+  {
+    transform: scale(1.3);
+  }
+
+  
+  form
+  {
+    margin-top:5px;
+    font-size:12px;
+  }
+  form .texts
+  {
+    height:30px;
+    width:150px;
+  }
+  form .btns
+  {
+    width:50px;
+    height:30px;
+  }
+  .card-body
+  {
+    padding:1px;
+  }
+/*banner*/
+.corimg img
+{
+  width: 100%;
+}
+
+.tabcorona 
+{
+   display:block;
+    margin:0;
+    padding-right: 0;
+    padding-left:65px;
+}
+.tabcorona button 
+{
+  padding:0px 20px 2px 20px;
+    font-size: 14px;
+
+}
+
+.corocase
+{
+    display: flex;
+    padding:30px;
+}
+.corocase li
+{
+    flex:1; 
+    list-style-type: none;
+    font-size: 20px; 
+    text-transform: uppercase; 
+    border:1px solid #140f55;
+    margin: 10px; 
+    border-radius: 8px; 
+    text-align: center; 
+    letter-spacing: 1px;
+    padding:12px;
+}
+.corocase li span
+{
+    display:block; 
+    font-weight: bold;
+    font-size: 50px; 
+    letter-spacing: 0; 
+    line-height: 70px;   
+    margin-bottom: 10px;
+}
+.corocase li a:hover
+{
+  text-decoration: none;
+}
+.corocase li a
+{
+  color:#fff; 
+}
+}
+@media(min-width:1024px) and (max-width:1439px)
+{
+  body
+  {
+    margin: 0;
+    width:100%;
+    overflow-x: hidden;
+  }
+  .logostyle
+  {
+    width:200px;
+    margin:0;
+    
+  }
+  .names 
+  {
+    margin:auto;
+    font-size:40px;
+    text-align: center;
+  }
+
+ .navbar .fa,.navbar .fab
+  {
+    padding:7px;
+    font-size:20px;
+    width:30px;
+    margin: 0;
+  }
+  i 
+  {
+    padding:0;
+    margin: 0;
+    font-size:20px;
+  }
+  i .fab .fa-android
+  {
+    padding:0;
+    margin-left: 0;
+  }
+ 
+  .settle
+  {
+  float: left;
+  margin:0px;
+  }
+  .lists .nav-item .nav-link
+  {
+    border:none;
+    line-height:7px;
+    font-weight: 400;
+    font-size:16px;
+    margin:0px;
+    padding:5px;
+  }
+  .nav-link:hover
+  {
+    transform: scale(1.3);
+  }
+
+  
+  form
+  {
+    margin-top:5px;
+    font-size:12px;
+  }
+  form .texts
+  {
+    height:30px;
+    width:150px;
+  }
+  form .btns
+  {
+    width:50px;
+    height:30px;
+  }
+  .card-body
+  {
+    padding:1px;
+  }
+/*banner*/
+.corimg img
+{
+  width: 100%;
+}
+
+.tabcorona 
+{
+    overflow: hidden; 
+    font-family: 'roboto';
+    margin-left: 5px;
+}
+
+.corocase
+{
+    display: flex;
+    margin-top: 10px;
+    padding:0 0 0 100px;
+}
+.corocase li
+{
+
+    flex:1; 
+    list-style-type: none;
+    font-size: 20px; 
+    text-transform: uppercase; 
+    border:1px solid #140f55;
+    margin: 5px; 
+    border-radius: 8px; 
+    text-align: center; 
+    letter-spacing: 1px;
+    padding:30px;
+}
+.corocase li span
+{
+    display:block; 
+    font-weight: bold;
+    font-size: 50px; 
+    letter-spacing: 0; 
+    line-height: 70px;   
+    margin-bottom: 10px;
+}
+.bluecoro,.greencoro,.redcoro
+{
+  width:800px;
+}
+}

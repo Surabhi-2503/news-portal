@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Newsopedia</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width ,initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="indicator.css">
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container { margin: 150px auto; }
+    </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+    var num=["news1.jpg","news2.jpg","news3.jpg"];
+    var des=["<a href = 'https://timesofindia.indiatimes.com/india/sc-adjourns-hearing-in-2009-contempt-case-against-prashant-bhushan-tarun-tejpal/articleshow/77142368.cms' target='_blank'><font color='black'>2009 contempts case against Bhushan,tejpal:SC adjouens...</font></a>","<a href ='https://techcrunch.com/2020/07/07/adobe-ai-for-content-creators/' target='_blank'><font color='black'>Adobe tests an AI recommendation tool for headlines and images</font></a>","<a href = 'https://www.indiatvnews.com/news/world/coronavirus-live-updates-breaking-news-july-4-2020-631458' target='_blank'><font color='black'>West Bengal reports 743 fresh COVID-19 cases and 19 deaths in 24hr</font></a>"];
+    var sel=Math.round(Math.random()*(num.length-1));
+    function display()
+    {
+        document.write('<img src="'+num[sel]+'" class="img1 d-block w-100"></a>');
+        document.write(des[sel]);
+    }
+
+</script>
+</head> 
+<body>
+
+  <!-- header2 -->
+  <nav class="navbar navbar-expand-sm navbar-dark logos">
+    <a class="navbar-brand" href="#">
+        <img src="newsopedia.png" alt="logo" class="logostyle">
+      </a>
+      <p class="names"><font color="red">N</font>ews<font color="red">O</font>pedia</p>
+    <ul class="navbar navbar-expand-sm settle">
+      <li class="nav-item list-inline-item list-unstyled"><a href="#" class="fab fa-facebook"></a></li>
+    <li class="nav-item list-inline-item list-unstyled"><a href="#" class="fab fa-twitter"></a></li>
+    <li class="nav-item list-inline-item list-unstyled" ><a href="#" class="fa fa-rss"></a></li>
+    <li class="nav-item list-inline-item list-unstyled"><a href="#" class="fab fa-linkedin"></a></li>
+    <li class="nav-item list-inline-item list-unstyled"><a href="#" class="fab fa-youtube"></a></li>
+    <li class="nav-item list-inline-item list-unstyled"><a href="#" class="fab fa-instagram"></a></li>
+  </ul>
+  </nav>
+
+<!-- header2 -->
+  <nav class="navbar navbar-expand bg-danger sticky-top ">
+      <ul class="navbar-nav lists alligns d-flex flex-wrap">
+        <li class="nav-item list-inline">
+            <a class="nav-link" href="#">INDIA</a>
+        </li>
+        <li class="nav-item list-inline">
+            <a class="nav-link" href="#">WORLD</a>
+        </li>
+        <li class="nav-item list-inline">
+            <a class="nav-link" href="#">BUSINESS</a>
+        </li>
+        <li class="nav-item list-inline">
+            <a class="nav-link" href="#">ENTERTAINMENT</a>
+        </li>
+        <li class="nav-item list-inline">
+            <a class="nav-link " href="#">CRICKET</a>
+        </li>
+        <li class="nav-item list-inline">
+            <a class="nav-link" href="#">WEB-SERIES</a>
+        </li>
+        <li class="nav-item list-inline">
+            <a class="nav-link" href="#">LIFESTYLE</a>
+        </li>
+      
+        <li class="nav-item">
+          <form class="form-inline d-flex " action="#">
+            <div class="input-group">
+              <input type="text" class="form-control texts ml-3" placeholder="Search">
+                <div class="input-group-prepend text-center btns"> 
+                  <span class="input-group-text fa fa-search bg-dark text-light pr-1.5 btns"></span>
+                  </div>
+              </div>
+          </form> 
+        </li>
+        <li class="nav-item ">
+        <p class="text-right">CORONA Virus Updates<font color="blue">>>></font></p>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- slider -->
+   <div class="container-fluid my-1">
+    <hr class="my-1"/>
+      <div id="carouselExample1" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img class="d-block w-100 ab" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                  <img class="d-block w-100 ab" src="slide3.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                  <img class="d-block w-100 ab" src="slide1.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                  <img class="d-block w-100 ab" src="slide4.jpg" alt="Fourth slide">
+              </div>
+              <div class="carousel-item">
+                  <img class="d-block w-100 ab" src="slide5.jpg" alt="Fifth slide">
+              </div>
+              <div class="carousel-item">
+                  <img class="d-block w-100 ab" src="razer-blade-r2-carousel.png" alt="Sixth slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExample1" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExample1" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- rows -->
+  <div class="container-fluid mt-4 mb-0 ">
+    <div class="row">
+      <!--recent images-->
+      <div class="recent  col-lg-4 ">
+        <script>display()</script>
+        <p class="text-center font-weight-bolder border border-success bg-dark text-light p-3" >LATEST NEWS</p>
+      </div>
+      <!--article links-->
+      <div class="newsl col-lg-8">
+        <h3 class="text-center border border-dark text-dark">TOP NEWS</h3>
+        <div class="row border border-light">
+          <div id="accordion" class="row ">
+            <div class="card col-md border border-light" >
+                <div class="card-header border border-warning">
+                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                      <img class="col-md d-block w-100" src="news1.jpg" >
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      <a href="https://timesofindia.indiatimes.com/india/sc-adjourns-hearing-in-2009-contempt-case-against-prashant-bhushan-tarun-tejpal/articleshow/77142368.cms" target="_blank"><h3 class="text-secondary">2009 contempts case against Bhushan,tejpal:SC adjouens...</h3></a>
+                      <p class="text-body">The SC adjourned the hearing to august 4 2009 contempts case against lawyer Prashant Bhushan..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md border border-light">
+                <div class="card-header border border-warning">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                      <img class="col-md d-block w-100" src="news2.jpg" >
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      <a href="https://techcrunch.com/2020/07/07/adobe-ai-for-content-creators/" target="_blank"><h3 class="text-secondary">Adobe tests an AI recommendation tool for headlines and images</h3></a>
+                      <p class="text-body">..simple AB testing and presonalization,leveraging the company's AI technology Adobe Sensei to suggest different headlines and images.</p>.
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md border border-light">
+                <div class="card-header border border-warning">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                      <img class="col-md d-block w-100" src="news3.jpg" >
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      <a href="https://techcrunch.com/2020/07/07/adobe-ai-for-content-creators/" target="_blank"><h3 class="text-secondary">West Bengal reports 743 fresh COVID-19 cases and 19 deaths in 24hrs</h3></a>
+                      <p class="text-body">Radar/satellite images indicate cloudy west coast,active monsoon......and @xyzabc for news,tips,photos.</p>.
+                    </div>
+                </div>
+             </div>
+          </div>
+        </div>
+        <!--row2-->
+        <div class="row border border-light">
+          <div id="accordion1" class="row">
+            <div class="card col-md border border-light" >
+                <div class="card-header border border-warning">
+                    <a class="card-link " data-toggle="collapse" href="#collapseFour">
+                      <p class="text-dark one">Himesh feels today's singers should compose their own songs.</p>
+                    </a>
+                </div>
+                <div id="collapseFour" class="collapse" data-parent="#accordion1">
+                    <div class="card-body border border-success">
+                      <a href="https://www.indiatvnews.com/entertainment/celebrities/himesh-reshammiya-feels-today-s-singers-should-compose-their-own-songs-636481" target="_blank"><p class="text-body">I feel today's singers try and compose their own songs because only then they will know the soul of their own composition and thats'll....</p></a>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md border border-light">
+                <div class="card-header border border-warning">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+                      <p class="text-dark one">Trump to sebd 'surge' of hunderds of federal agents to cities</p>
+                    </a>
+                </div>
+                <div id="collapseFive" class="collapse" data-parent="#accordion1">
+                    <div class="card-body border border-success">
+                      <a href="https://www.bbc.com/news/world-us-canada-53507660" target="_blank">
+                        <p class="text-body">Protests are ongoing in Portland,where the mayor was among those teargassed by federal agents.</p>
+                      </a>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md border border-light">
+                <div class="card-header border border-warning">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseSix">
+                      <p class="text-dark one">Roman jars found in Spanish seafood shop</p>
+                    </a>
+                </div>
+                <div id="collapseSix" class="collapse" data-parent="#accordion1">
+                    <div class="card-body">
+                      <a href="https://www.bbc.com/news/world-europe-53511208" target="_blank">
+                        <p class="text-body">Two men are investigated after 13 ancient amphoras are discovered during a routine inspection.</p>
+                      </a>
+                      
+                    </div>
+                </div>
+             </div>
+          </div>
+        </div>
+        <!--row3-->
+        <div class="row border border-light">
+          <div id="accordion2" class="row">
+            <div class="card col-md border border-light" >
+                <div class="card-header border border-warning">
+                    <a class="card-link " data-toggle="collapse" href="#collapseseven">
+                      <p class="text-dark one">Himesh feels today's singers should compose their own songs.</p>
+                    </a>
+                </div>
+                <div id="collapseseven" class="collapse" data-parent="#accordion2">
+                    <div class="card-body">
+                      <a href="https://www.indiatvnews.com/entertainment/celebrities/himesh-reshammiya-feels-today-s-singers-should-compose-their-own-songs-636481" target="_blank"><p class="text-body">I feel today's singers try and compose their own songs because only then they will know the soul of their own composition and thats'll....</p></a>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md border border-light">
+                <div class="card-header border border-warning ">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseeight">
+                      <p class="text-dark one">Trump to sebd 'surge' of hunderds of federal agents to cities</p>
+                    </a>
+                </div>
+                <div id="collapseeight" class="collapse" data-parent="#accordion2">
+                    <div class="card-body ">
+                      <a href="https://www.bbc.com/news/world-us-canada-53507660" target="_blank">
+                        <p class="text-body">Protests are ongoing in Portland,where the mayor was among those teargassed by federal agents.</p>
+                      </a>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md border border-light">
+                <div class="card-header border border-warning">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapsenine">
+                      <p class="text-dark one">Roman jars found in Spanish seafood shop</p>
+                    </a>
+                </div>
+                <div id="collapsenine" class="collapse" data-parent="#accordion2">
+                    <div class="card-body">
+                      <a href="https://www.bbc.com/news/world-europe-53511208" target="_blank">
+                        <p class="text-body">Two men are investigated after 13 ancient amphoras are discovered during a routine inspection.</p>
+                      </a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--video-->
+
+   <div class="container-fluid m-0">
+       <div class="row border border-light">
+        <div class="col-lg-8">
+            <div class="container m-3">
+                <div class="row">
+                   <div id="myCarousel" class="carousel slide w-100  cinner" data-ride="carousel">
+                       <div class="carousel-inner w-100 cinner text-center font-weight-bolder" role="listbox">
+                          <h4 class="font-weight-light">Popular videos</h4>
+                            <div class="carousel-item active citem">
+                                <div class="col-lg-4 col-md-6">
+                                    <iframe class="img-fluid two" style="height:200px;" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                            <div class="carousel-item citem">
+                                <div class="col-lg-4 col-md-6">
+                                    <iframe class="img-fluid two" style="height:200px;" src="https://www.youtube.com/embed/cVkUWLDOzaw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                            <div class="carousel-item citem">
+                                <div class="col-lg-4 col-md-6">
+                                    <iframe class="img-fluid two" style="height:200px;" src="https://www.youtube.com/embed/kaMig9e4cZ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                            <div class="carousel-item citem">
+                                <div class="col-lg-4 col-md-6">
+                                    <iframe class="img-fluid two" style="height:200px;"  src="https://www.youtube.com/embed/YgeNWg93bdQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="carousel-item citem">
+                                <div class="col-lg-4 col-md-6">
+                                    <iframe class="img-fluid two" style="height:200px;" src="https://www.youtube.com/embed/Y7SuK09yw58" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="carousel-item citem">
+                                <div class="col-lg-4 col-md-6">
+                                    <iframe class="img-fluid two" style="height:200px;" src="https://www.youtube.com/embed/UXsOPJ3TJPw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="carousel-item citem">
+                                <div class="col-lg-4 col-md-6">
+                                    <iframe class="img-fluid two" style="height:200px;" src="https://www.youtube.com/embed/IJaLUxWJxwM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="carousel-item citem">
+                                <div class="col-lg-4 col-md-6">
+                                    <iframe class="img-fluid two" style="height:200px;" src="https://www.youtube.com/embed/oxYhGVHihnA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev bg-dark w-auto" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next bg-dark w-auto" href="#myCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--news-->
+        <div class="col-lg-4">
+                <div class="row border border-light m-1">
+                    <div id="accordion4">
+                        <div class="card col border border-light" >
+                            <div class="card-header border border-warning">
+                                <a class="card-link " data-toggle="collapse" href="#collapseFour1">
+                                    <p class="text-dark one">Himesh feels today's singers should compose their own songs.</p>
+                                </a>
+                            </div>
+                            <div id="collapseFour1" class="collapse" data-parent="#accordion4">
+                                <div class="card-body">
+                                    <a href="https://www.indiatvnews.com/entertainment/celebrities/himesh-reshammiya-feels-today-s-singers-should-compose-their-own-songs-636481" target="_blank"><p class="text-body">I feel today's singers try and compose their own songs because only then they will know the soul of their own composition and thats'll....</p></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col border border-light">
+                            <div class="card-header border border-warning">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive1">
+                                    <p class="text-dark one">Trump to sebd 'surge' of hunderds of federal agents to cities</p>
+                                </a>
+                            </div>
+                            <div id="collapseFive1" class="collapse" data-parent="#accordion4">
+                                <div class="card-body ">
+                                    <a href="https://www.bbc.com/news/world-us-canada-53507660" target="_blank">
+                                        <p class="text-body">Protests are ongoing in Portland,where the mayor was among those teargassed by federal agents.</p>
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col border border-light">
+                            <div class="card-header border border-warning">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseSix1">
+                                    <p class="text-dark one">Roman jars found in Spanish seafood shop</p>
+                                </a>
+                            </div>
+                            <div id="collapseSix1" class="collapse" data-parent="#accordion4">
+                                <div class="card-body">
+                                    <a href="https://www.bbc.com/news/world-europe-53511208" target="_blank">
+                                        <p class="text-body">Two men are investigated after 13 ancient amphoras are discovered during a routine inspection.</p>
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script id="scripts">
+try {
+  fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+    return true;
+  }).catch(function(e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+  console.log(error);
+}
+</script>
+    <!--scripts loaded here-->
+
+    <script  class="scripts" src="carousel.js"></script>
+    <script  class="scripts" type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('scripts'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsById("scripts")[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</div><br>
+<!--section three-->
+  <div class="container-fluid mt-1 ">
+    <div class="row">
+      <div class="col-lg-9">
+        <div class="row border border-light">
+          <div id="accordion1" class="row mt-4">
+            <div class="card col-md border border-light p-3" >
+                <div class="card-header border border-warning">
+                    <a class="card-link " data-toggle="collapse" href="#collapseFour">
+                      <p class="text-dark one">Himesh feels today's singers should compose their own songs.</p>
+                    </a>
+                </div>
+                <div id="collapseFour" class="collapse" data-parent="#accordion1">
+                    <div class="card-body border border-success">
+                      <a href="https://www.indiatvnews.com/entertainment/celebrities/himesh-reshammiya-feels-today-s-singers-should-compose-their-own-songs-636481" target="_blank"><p class="text-body">I feel today's singers try and compose their own songs because only then they will know the soul of their own composition and thats'll....</p></a>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md border border-light p-3">
+                <div class="card-header border border-warning">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+                      <p class="text-dark one">Trump to sebd 'surge' of hunderds of federal agents to cities</p>
+                    </a>
+                </div>
+                <div id="collapseFive" class="collapse" data-parent="#accordion1">
+                    <div class="card-body border border-success">
+                      <a href="https://www.bbc.com/news/world-us-canada-53507660" target="_blank">
+                        <p class="text-body">Protests are ongoing in Portland,where the mayor was among those teargassed by federal agents.</p>
+                      </a>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md border border-light p-3">
+                <div class="card-header border border-warning">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseSix">
+                      <p class="text-dark one">Roman jars found in Spanish seafood shop</p>
+                    </a>
+                </div>
+                <div id="collapseSix" class="collapse" data-parent="#accordion1">
+                    <div class="card-body">
+                      <a href="https://www.bbc.com/news/world-europe-53511208" target="_blank">
+                        <p class="text-body">Two men are investigated after 13 ancient amphoras are discovered during a routine inspection.</p>
+                      </a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!--row2 section2-->
+        <div class="row border border-light">
+          <div id="accordion2" class="row">
+            <div class="card col-md border border-light" >
+                <div class="card-header border border-warning">
+                    <a class="card-link " data-toggle="collapse" href="#collapseseven">
+                      <p class="text-dark one">Himesh feels today's singers should compose their own songs.</p>
+                    </a>
+                </div>
+                <div id="collapseseven" class="collapse" data-parent="#accordion2">
+                    <div class="card-body">
+                      <a href="https://www.indiatvnews.com/entertainment/celebrities/himesh-reshammiya-feels-today-s-singers-should-compose-their-own-songs-636481" target="_blank"><p class="text-body">I feel today's singers try and compose their own songs because only then they will know the soul of their own composition and thats'll....</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md border border-light">
+                <div class="card-header border border-warning ">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseeight">
+                      <p class="text-dark one">Trump to sebd 'surge' of hunderds of federal agents to cities</p>
+                    </a>
+                </div>
+                <div id="collapseeight" class="collapse" data-parent="#accordion2">
+                    <div class="card-body ">
+                      <a href="https://www.bbc.com/news/world-us-canada-53507660" target="_blank">
+                        <p class="text-body">Protests are ongoing in Portland,where the mayor was among those teargassed by federal agents.</p>
+                      </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md border border-light">
+                <div class="card-header border border-warning">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapsenine">
+                      <p class="text-dark one">Roman jars found in Spanish seafood shop</p>
+                    </a>
+                </div>
+                <div id="collapsenine" class="collapse" data-parent="#accordion2">
+                    <div class="card-body">
+                      <a href="https://www.bbc.com/news/world-europe-53511208" target="_blank">
+                        <p class="text-body">Two men are investigated after 13 ancient amphoras are discovered during a routine inspection.</p>
+                      </a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!--cursor with page indicator-->  
+        <div class="container mt-4 mb-0">
+          <hr class="my-0">
+          <!--Carousel Wrapper-->
+          <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+          <!--Indicators-->
+            <ol class="carousel-indicators my-4">
+              <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+              <li data-target="#multi-item-example" data-slide-to="1"></li>
+              <li data-target="#multi-item-example" data-slide-to="2"></li>
+            </ol>
+          <!--/.Indicators-->
+          <!--Slides-->
+          <div class="carousel-inner bg-warning" role="listbox">
+            <h4 class="font-weight-light text-center bg-dark text-light">PHOTOS</h4>
+          <!--First slide-->
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"alt="Card image cap">
+                  </div>
+                </div>
+                <div class="col-md-4 clearfix d-none d-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"alt="Card image cap">
+                  </div>
+                </div>
+                <div class="col-md-4 clearfix d-none d-block">
+                    <div class="card mb-2">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Card image cap">
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!--/.First slide-->
+            <!--Second slide-->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"alt="Card image cap">
+                  </div>
+                </div>
+                <div class="col-md-4 clearfix d-none d-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"alt="Card image cap">
+                  </div>
+                </div>
+                <div class="col-md-4 clearfix d-none d-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"alt="Card image cap">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/.Second slide-->
+            <!--Third slide-->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md ">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"alt="Card image cap">
+                  </div>
+                </div>
+                <div class="col-md clearfix d-none d-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"alt="Card image cap">
+                  </div>
+                </div>
+                <div class="col-md clearfix d-none d-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"alt="Card image cap">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/.Third slide-->
+          </div>
+          <a class="carousel-control-prev bg-dark w-auto" href="#multi-item-example" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next bg-dark w-auto" href="#multi-item-example" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+          <!--/.Slides-->
+        </div>
+        <!--/.Carousel Wrapper-->
+      </div>
+      <!--page indicator ends-->              
+    </div>
+    <!--column-->
+    <div class="col-lg-3 mt-1 mb-1">
+        <div class="container  bg-secondary border-dark my-0">
+          <p class="text-white font-weight-bolder text-center bg-dark ">You May Like</p>
+            <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                  alt="Card image cap" style="height:150px;">
+              <div class="card-body pt-0">
+                <h5 class="card-title">Ready To live in 2BHK in Panvel|82L(All Inc)</h5>
+                <p class="card-text text-align-start">Balaji Symphony</p>
+              </div>
+        </div>
+        <div class="card ">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                  alt="Card image cap" style="height:150px;">
+              <div class="card-body pt-0">
+                <h5 class="card-title">They thought it was the coronavirus but it was worse!</h5>
+                <p class="card-text text-align-start">ImpactGuru</p>
+        </div>
+        </div>
+        
+    </div>
+    <!--column-->
+  </div>
+</div>
+
+<!--FOOTER-->
+  
+<footer class="page-footer font-small pt-4 m-0">
+    <div class="container-fluid text-center text-md-left">
+      <div class="row">
+        <div class="col-md-3 mt-md-0 m-0 mt-3">
+          <!-- Content -->
+          <a class="navbar-brand" href="#">
+              <img src="newsopedia.png" alt="logo" class="logostyle">
+          </a>
+        </div>
+        <hr class="clearfix w-100 d-md-none ">
+        <div class="col-md-2 mb-md-0 mb-3 ">
+          <ul class="list-unstyled ">
+            <li class="pt-4 ">
+              <a href="#!" class="text-light">Contact us</a>
+            </li>
+            <li class="pt-4">
+              <a href="#!" class="text-light">About us</a>
+            </li>
+            <li class="pt-4">
+              <a href="#!" class="text-light">Careers</a>
+            </li>
+            <li class="pt-4">
+              <a href="#!" class="text-light">Press</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-md-0 mb-3">
+          <ul class="list-unstyled ">
+              <li class="pt-4 ">
+                <a href="#!" class="text-light">Create your ad</a>
+              </li>
+              <li class="pt-4">
+                <a href="#!" class="text-light">Advertise with us</a>
+              </li>
+              <li class="pt-4">
+                <a href="#!" class="text-light">Feedback</a>
+              </li>
+              <li class="pt-4">
+                <a href="#!" class="text-light">Archives</a>
+              </li>
+            </ul>
+        </div>
+        <div class="col-md-1 mb-md-0 mb-3">
+          <ul class="list-unstyled ">
+              <li class="pt-4 ">
+                <a href="#!" class="text-light">Terms of use</a>
+              </li>
+              <li class="pt-4">
+                <a href="#!" class="text-light">e-paper</a>
+              </li>
+              <li class="pt-4">
+                <a href="#!" class="text-light">Policy</a>
+              </li>
+              <li class="pt-4">
+                <a href="#!" class="text-light">RSS</a>
+              </li>
+            </ul>
+        </div>
+        <div class="col-md-4 mb-md-0 mb-2">
+          <ul class="navbar navbar-expand-sm settle">
+            <li class="nav-item list-inline-item list-unstyled"><a href="#" class="fab fa-facebook"></a></li>
+            <li class="nav-item list-inline-item list-unstyled"><a href="#" class="fab fa-twitter"></a></li>
+            <li class="nav-item list-inline-item list-unstyled" ><a href="#" class="fa fa-rss"></a></li>
+            <li class="nav-item list-inline-item list-unstyled"><a href="#" class="fab fa-linkedin"></a></li>
+            <li class="nav-item list-inline-item list-unstyled"><a href="#" class="fab fa-youtube"></a></li>
+            <li class="nav-item list-inline-item list-unstyled"><a href="#" class="fab fa-instagram"></a></li>
+          </ul>
+          <p>DOWNLOAD TOI APP </p>
+          <div class="app m-0 w-100 d-block pt-0" >
+              <i class="fab fa-android " aria-hidden="true"style='font-size:40px;color:white'><p style="font-size:13px;">android</p></i>
+              <i class="fab fa-apple" aria-hidden="true" style='font-size:48px;color:white'><p style="font-size:13px;">iPhone</p></i>
+              <i class="fab fa-blackberry " style='font-size:48px;color:white'><p style="font-size:13px;">blackberry</p></i>
+              <i class="fab fa-windows pl-3" aria-hidden="true"style='font-size:48px;color:white'><p style="font-size:13px;">windows</p></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="index.html"> NewsOpedia.com</a>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+

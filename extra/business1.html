@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+	<link rel="stylesheet" type="text/css" href="business1.css">
+</head>
+<body>
+	<div class="container">
+		<div class="section">
+			<div class="section1">
+				<img src="newsopedia.png" alt="logo">
+			</div>
+			<div class="section2"><h3><font color="red">N</font>ews<font color="red">O</font>pedia</h3></div>
+			<div class="section3">
+				<ul class="ICON">
+		      		<li class="ICONL"><a class="ICONA" href="#"><i class="fa fa-facebook"></i></a></li>
+				    <li class="ICONL"><a class="ICONA" href="#"><i class="fa fa-twitter"></i></a></li>
+				    <li class="ICONL"><a class="ICONA" href="#"><i class="fa fa-rss"></i></a></li>
+				    <li class="ICONL"><a class="ICONA" href="#"><i class="fa fa-linkedin"></i></a></li>
+				    <li class="ICONL"><a class="ICONA" href="#"><i class="fa fa-youtube"></i></a></li>
+				    <li class="ICONL"><a class="ICONA" href="#"><i class="fa fa-instagram"></i></a></li>
+				 </ul>
+			</div>
+		</div>
+	</div>
+	<!--SECTION2-->
+	<div class="navbar">
+		<ul class="navbaru">
+			<li class="nav"><a class="nava" href="index.html">HOME</a></li>
+			<li class="nav"><a class="nava" href="#">WORLD</a></li>
+			<li class="nav"><a class="nava" href="business.html">BUSINESS</a></li>
+			<li class="nav"><a class="nava" href="#">ENTERTAINMENT</a></li>
+			<li class="nav"><a class="nava" href="#">CRICKET</a></li>
+			<li class="nav"><a class="nava" href="#">WEB-SERIES</a></li>
+			<li class="nav"><a class="nava" href="#">LIFESTYLE</a></li>
+			<li class="abc"><input type="text" placeholder="Search.." name="search">
+      						<button type="submit"><i class="fa fa-search" style="padding:8px;"></i></button></li>
+      		<li class="nav"><a href="virus.html" class="corona">CORONA Virus Updates<font color="blue">>>></font></a></li>
+		</ul>
+	</div>
+	<!--SECTION2 ENDS-->
+	<!--SLIDER-->
+	<div id="slidy-container">
+	  <figure id="slidy">
+	    <img src="slide5.jpg" alt="eyes" >
+	    <img src="slide1.jpg" alt="lou" >
+	    <img src="slide3.jpg" alt="lucie-2" >
+	    <img src="slide4.jpg" alt="lucie" >
+	  </figure>
+	</div>
+	<!--SLIDER ENDS-->
+<script type="text/javascript" href="business.js">
+	var timeOnSlide = 4, 		
+ 		timeBetweenSlides =2, 	
+    	animationstring = 'animation',
+    	animation = false,
+    	keyframeprefix = '',
+    	domPrefixes = 'Webkit Moz O Khtml'.split(' '), 
+    // array of possible vendor prefixes
+    	pfx  = '',
+    	slidy = document.getElementById("slidy"); 
+		if (slidy.style.animationName !== undefined)
+		{ 
+			animation = true; 
+		} 
+		if( animation === false ) {
+  				for( var i = 0; i < domPrefixes.length; i++ ) 
+  				{
+				    if( slidy.style[ domPrefixes[i] + 'AnimationName' ] !== undefined ) 
+				    {
+				      pfx = domPrefixes[ i ];
+				      animationstring = pfx + 'Animation';
+				      keyframeprefix = '-' + pfx.toLowerCase() + '-';
+				      animation = true;
+				      break;
+    				}
+			  	}
+
+			}
+if( animation === false ) {
+  // animate in JavaScript fallback
+} else {
+  var images = slidy.getElementsByTagName("img"),
+      firstImg = images[0], 
+      imgWrap = firstImg.cloneNode(false);  
+  slidy.appendChild(imgWrap); 
+  var imgCount = images.length, t
+      totalTime = (timeOnSlide + timeBetweenSlides) * (imgCount - 1), 
+      slideRatio = (timeOnSlide / totalTime)*100, 
+      moveRatio = (timeBetweenSlides / totalTime)*100,
+      basePercentage = 100/imgCount, 
+      position = 0,
+      css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML += "#slidy { text-align: left; margin: 0; font-size: 0; position: relative; width: " + (imgCount * 100) + "%;  }\n"; 
+  css.innerHTML += "#slidy img { float: left; width: " + basePercentage + "%; }\n";
+  css.innerHTML += "@"+keyframeprefix+"keyframes slidy {\n"; 
+  for (i=0;i<(imgCount-1); i++) {  
+    position+= slideRatio;
+    css.innerHTML += position+"% { left: -"+(i * 100)+"%; }\n";
+    position += moveRatio; // make the postion for the _next_ slide
+    css.innerHTML += position+"% { left: -"+((i+1) * 100)+"%; }\n";
+}
+  css.innerHTML += "}\n";
+  css.innerHTML += "#slidy { left: 0%; "+keyframeprefix+"transform: translate3d(0,0,0); "+keyframeprefix+"animation: "+totalTime+"s slidy infinite; }\n"; 
+document.body.appendChild(css); 
+}
+</script>
+</body>
+</html>

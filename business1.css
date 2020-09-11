@@ -1,0 +1,462 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+
+body
+{
+  margin:0;
+  width: 100%;
+  overflow-x: hidden;
+}
+.container-fluid
+{
+  width:100%;
+  dislay:flex;
+  color:white;
+
+}
+.section
+{
+  background-color:black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-start;
+}
+.section1 img
+{
+  padding-top:23px;
+  width:300px;
+    padding-left:20px;
+    transition: width 2s linear;
+}
+.section1 img:hover
+{
+  width:301px;
+  transform:scale(1.2);
+}
+.section2 h3
+{
+  display: inline;
+  padding-left:260px;
+  font-family: cursive;
+    font-weight: 800;
+    font-size:50px;
+}
+.section3 
+{
+   padding-left:170px;
+}
+.section3 .ICON .ICONL
+{
+  display:inline;
+  text-decoration: none;
+}
+.ICONL .ICONA
+{
+  display: inline;
+  line-height:50px;
+}
+
+.fa{
+
+    padding:20px;
+    font-size:18px;
+    width:20px;
+    text-decoration: none;
+    border-radius:50%;
+    text-align:center;
+  }
+  
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-rss{
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.navbar
+{
+  background: #bb2124;
+}
+.navbar .navbaru
+{
+  margin:0;
+  padding:15px;
+
+}
+.nav,.abc
+{
+  display: inline;
+  
+}
+.navbaru .nava
+{
+   padding:10px;
+   text-decoration: none;
+  color:white;
+  font-weight: bold;
+  font-size:1rem;
+  border-right:.5px solid black;
+}
+ .abc input[type=text]{
+  font-size: 17px;
+  border: none;
+  padding: 5.5px;
+}
+
+.abc button {
+  padding:0px;
+  font-size: 17px;
+  border: none;
+
+  background:black;
+  color:white;
+  cursor: pointer;
+  margin: 0;
+}
+
+.abc button:hover {
+  background: #ccc;
+}
+.corona
+{
+  padding-left:150px;
+  line-height:25px;
+  font-size:1rem;
+  font-weight: bold;
+  font-family: cursive;
+  color:white;
+  animation:anim 2s infinite;
+}
+@keyframes anim{
+  0%{transform:scale(0.7);}
+  25%{transform:scale(0.8);color:blue;}
+  50%{transform:scale(0.9);color:black;}
+  75%{transform:scale(1.0);color:white;}
+  100%{transform:scale(1.1);color:blue;}
+}
+#slidy-container { 
+  width: 100%;height:250px; overflow: hidden; margin: 0 auto;
+}
+#slidy .i1
+{
+  height:250px;
+}
+.row,.rows
+{
+  
+  width:100%;
+  margin:0;
+  padding:3px;
+}
+.i2
+{
+  width:250px;
+  height:300px;
+}
+.videos,.article
+{
+  
+  border:1px solid transparent;
+  background-color:#6c757d;
+  color:#f8f9fa;
+  text-align: center;
+  font-size: 32px;
+  margin-top:50.8px;
+}
+.row1
+{
+  margin-left:100.8px;
+  margin-right:100.8px;
+  padding-left:10px;
+}
+
+.art{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  
+  text-align: center;
+  font-family: arial;
+}
+.title {
+  color: grey;
+  font-size:12px;
+}
+
+.span{
+  border: none;
+  outline: 0;
+  display:grid;
+  padding:18px;
+  color:black;
+  background-color:#6c757d;
+  text-align: center;
+  cursor: pointer;
+  
+  font-size: 18px;
+}
+.span i
+{
+  display: inline;
+  float:left;
+  font-size: 15px;
+}
+
+
+.span:hover {
+  opacity: 0.7;
+}
+.grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap:25px;
+  align-items:stretch;
+  
+}
+
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+   
+}
+.text h3
+{
+  font-size:12px;
+  font-family: sans-serif;
+}
+
+.grid > article iframe,.grid > article img {
+  width: 100%;
+  height:200px;
+ 
+}
+iframe:hover,img:hover
+{
+  transform: scale(1.1);
+}
+.text h3 a
+{
+  color:black;
+  text-decoration: none;
+}
+.text h3 a:hover
+{
+  color:blue;
+}
+
+.grid .text {
+  padding:0;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  text-align: center;
+  margin-bottom: 20px;
+  border:1px solid black;
+
+}
+.container1
+{
+  background-color: black;
+  margin-top:7px;
+  width:100%;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  overflow:hidden;
+
+}
+h3 a
+{
+  color:white;
+  text-decoration: none;
+}
+.pagination a:hover{background-color: #ddd;}
+@media(min-width: 320px) and (max-width: 374px)
+{
+    body
+  {
+    width:100%;
+    overflow-x:hidden;
+  }
+  .navbar .navbaru
+  {
+   padding:10px;
+  }
+  .navbaru .nava
+  {
+    padding:5px;
+    font-size:18px;
+    border-right:none;
+  }
+ .abc input[type=text]{
+  font-size: 17px;
+  padding: 5.5px;
+}
+
+.abc button {
+font-size: 17px;
+
+}
+
+
+.corona
+{
+  padding-left:10px;
+  line-height:0px;
+  font-size:10px;
+animation:anim 2s infinite;
+}
+  
+}
+@media(min-width: 375px) and (max-width: 425px)
+{
+    body
+  {
+    width:100%;
+    overflow-x:hidden;
+  }
+  .section1 img
+  { 
+    padding-top:20px;
+    width:300px;
+    margin:auto;
+    padding-left: 110px;
+  }
+.section2 h3
+{
+  padding-left:150px;
+  font-size:35px;
+  letter-spacing: 2px;
+
+}
+.section3 
+{
+   padding-left:500px;
+   margin: 0;
+}
+.ICONL .ICONA
+{
+  line-height:0px;
+}
+.fa{
+    padding:10px;
+    font-size:12px;
+    width:15px;
+  }
+  
+}
+@media(min-width:426px) and (max-width: 767px)
+{
+  body
+  {
+    width:100%;
+    overflow-x:hidden;
+  }
+  .section1 img
+  { 
+    padding-top:20px;
+    width:300px;
+    margin:auto;
+    padding-left: 110px;
+  }
+.section2 h3
+{
+  padding-left:120px;
+  font-size:35px;
+  letter-spacing: 2px;
+
+}
+.section3 
+{
+   padding-left:180px;
+   margin: 0;
+}
+.ICONL .ICONA
+{
+  line-height:0px;
+}
+.fa{
+    padding:10px;
+    font-size:12px;
+    width:15px;
+  }
+  
+}
+
+
+@media(min-width:768px) and (max-width:1023px)
+{
+   body
+  {
+    width:100%;
+    overflow-x:hidden;
+  }
+  .section1 img
+  { 
+    padding-top:20px;
+    width:300px;
+    margin:auto;
+    padding-left: 50px;
+  }
+.section2 h3
+{
+  padding-left:180px;
+  font-size:40px;
+  letter-spacing: 2px;
+
+}
+.section3 
+{
+   padding-left:270px;
+   margin: 0;
+}
+.ICONL .ICONA
+{
+  line-height:0px;
+}
+.fa{
+    padding:10px;
+    font-size:12px;
+    width:15px;
+  }
+  
+}
+@media(min-width:1024px) and (max-width:1439px)
+@media(min-width:1439px) and (max-width:1440px)*/
+
+
+
+https://internship--surabhiphaneesh.repl.co/
+https://repl.it/@SurabhiPhaneesh/Internship
+https://repl.it/@SurabhiPhaneesh/Internship

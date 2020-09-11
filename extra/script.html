@@ -1,0 +1,46 @@
+
+				  <script type="text/javascript">
+        var cimages = [],te = [],
+        index = 0;
+        cimages[0] = "news1.jpg";
+        te[0]="<a href = 'https://timesofindia.indiatimes.com/india/sc-adjourns-hearing-in-2009-contempt-case-against-prashant-bhushan-tarun-tejpal/articleshow/77142368.cms'>2009 contempts case against Bhushan,tejpal:SC adjouens...</a>";
+        
+        cimages[1] ="news2.jpg";
+        te[1]="<a href = 'https://techcrunch.com/2020/07/07/adobe-ai-for-content-creators/'>Synergy between armed forces under Theatre Commands gives India edge over China on LAC</a>";
+        cimages[2]="news3.jpg";
+        te[2]="<a href = 'https://zeenews.india.com/cricket/indian-women-miss-out-but-south-africa-announce-24-member-squad-for-england-tour-2297828.html'>Adobe tests an AI recommendation tool for headlines and images</a>";
+       
+        var j = 0
+        var p = cimages.length;
+        var preBuffer = new Array()
+        
+        for (i = 0; i < p; i++){
+        preBuffer[i] = new Image()
+        preBuffer[i].src = cimages[i]
+        }
+        var whichImage = Math.round(Math.random()*(p-1));
+        
+        function showImage(){
+            if(whichImage==0){
+            document.write('<a href ="index.html"><img class="img1 d-block w-100" src="'+cimages[whichImage]+'"></a>');
+            document.write(te[whichImage]);
+            }
+              else if(whichImage==1){
+            document.write('<a href ="index.html"><img class="img1 d-block w-100" src="'+cimages[whichImage]+'" b></a>');
+            document.write(te[whichImage]);
+            }
+            else if(whichImage==2){
+            document.write('<a href ="index.html"><img class="img1 d-block w-100" src="'+cimages[whichImage]+'"></a>');
+            document.write(te[whichImage]);
+            }
+            else if(whichImage==3){
+            document.write('<a href ="index.html"><img class="img1 d-block w-100" src="'+cimages[whichImage]+'"></a>');
+            document.write(te[whichImage]);
+            }
+            
+        
+        }
+        </script>
+        <script>showImage();</script>
+        </script>
+      </script>
